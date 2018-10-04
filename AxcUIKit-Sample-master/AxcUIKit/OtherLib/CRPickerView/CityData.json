@@ -1,0 +1,2935 @@
+{
+    "data": [
+             {
+             "AreaCode": -1,
+             "AreaName": "不限",
+             "AreaType": -1,
+             "Children": [
+                          {
+                          "AreaCode": -1,
+                          "AreaName": "不限",
+                          "AreaType": -1,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 110000,
+             "AreaName": "北京市",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 110000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 110101,
+                          "AreaName": "东城区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110102,
+                          "AreaName": "西城区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110105,
+                          "AreaName": "朝阳区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110106,
+                          "AreaName": "丰台区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110107,
+                          "AreaName": "石景山区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110108,
+                          "AreaName": "海淀区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110109,
+                          "AreaName": "门头沟区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110111,
+                          "AreaName": "房山区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110112,
+                          "AreaName": "通州区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110113,
+                          "AreaName": "顺义区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110114,
+                          "AreaName": "昌平区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110115,
+                          "AreaName": "大兴区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110116,
+                          "AreaName": "怀柔区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110117,
+                          "AreaName": "平谷区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110228,
+                          "AreaName": "密云县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 110229,
+                          "AreaName": "延庆县",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 120000,
+             "AreaName": "天津市",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 120000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 120101,
+                          "AreaName": "和平区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120102,
+                          "AreaName": "河东区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120103,
+                          "AreaName": "河西区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120104,
+                          "AreaName": "南开区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120105,
+                          "AreaName": "河北区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120106,
+                          "AreaName": "红桥区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120110,
+                          "AreaName": "东丽区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120111,
+                          "AreaName": "西青区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120112,
+                          "AreaName": "津南区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120113,
+                          "AreaName": "北辰区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120114,
+                          "AreaName": "武清区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120115,
+                          "AreaName": "宝坻区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120116,
+                          "AreaName": "滨海新区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120221,
+                          "AreaName": "宁河县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120223,
+                          "AreaName": "静海县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 120225,
+                          "AreaName": "蓟县",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 130000,
+             "AreaName": "河北省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 130000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 130100,
+                          "AreaName": "石家庄市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130200,
+                          "AreaName": "唐山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130300,
+                          "AreaName": "秦皇岛市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130400,
+                          "AreaName": "邯郸市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130500,
+                          "AreaName": "邢台市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130600,
+                          "AreaName": "保定市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130700,
+                          "AreaName": "张家口市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130800,
+                          "AreaName": "承德市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 130900,
+                          "AreaName": "沧州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 131000,
+                          "AreaName": "廊坊市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 131100,
+                          "AreaName": "衡水市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 140000,
+             "AreaName": "山西省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 140000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 140100,
+                          "AreaName": "太原市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140200,
+                          "AreaName": "大同市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140300,
+                          "AreaName": "阳泉市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140400,
+                          "AreaName": "长治市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140500,
+                          "AreaName": "晋城市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140600,
+                          "AreaName": "朔州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140700,
+                          "AreaName": "晋中市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140800,
+                          "AreaName": "运城市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 140900,
+                          "AreaName": "忻州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 141000,
+                          "AreaName": "临汾市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 141100,
+                          "AreaName": "吕梁市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 150000,
+             "AreaName": "内蒙古自治区",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 150000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 150100,
+                          "AreaName": "呼和浩特市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150200,
+                          "AreaName": "包头市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150300,
+                          "AreaName": "乌海市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150400,
+                          "AreaName": "赤峰市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150500,
+                          "AreaName": "通辽市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150600,
+                          "AreaName": "鄂尔多斯市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150700,
+                          "AreaName": "呼伦贝尔市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150800,
+                          "AreaName": "巴彦淖尔市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 150900,
+                          "AreaName": "乌兰察布市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 152200,
+                          "AreaName": "兴安盟",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 152500,
+                          "AreaName": "锡林郭勒盟",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 152900,
+                          "AreaName": "阿拉善盟",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 210000,
+             "AreaName": "辽宁省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 210000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 210100,
+                          "AreaName": "沈阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210200,
+                          "AreaName": "大连市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210300,
+                          "AreaName": "鞍山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210400,
+                          "AreaName": "抚顺市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210500,
+                          "AreaName": "本溪市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210600,
+                          "AreaName": "丹东市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210700,
+                          "AreaName": "锦州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210800,
+                          "AreaName": "营口市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 210900,
+                          "AreaName": "阜新市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 211000,
+                          "AreaName": "辽阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 211100,
+                          "AreaName": "盘锦市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 211200,
+                          "AreaName": "铁岭市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 211300,
+                          "AreaName": "朝阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 211400,
+                          "AreaName": "葫芦岛市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 220000,
+             "AreaName": "吉林省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 220000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 220100,
+                          "AreaName": "长春市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220200,
+                          "AreaName": "吉林市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220300,
+                          "AreaName": "四平市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220400,
+                          "AreaName": "辽源市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220500,
+                          "AreaName": "通化市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220600,
+                          "AreaName": "白山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220700,
+                          "AreaName": "松原市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 220800,
+                          "AreaName": "白城市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 222400,
+                          "AreaName": "延边朝鲜族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 230000,
+             "AreaName": "黑龙江省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 230000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 230100,
+                          "AreaName": "哈尔滨市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230200,
+                          "AreaName": "齐齐哈尔市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230300,
+                          "AreaName": "鸡西市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230400,
+                          "AreaName": "鹤岗市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230500,
+                          "AreaName": "双鸭山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230600,
+                          "AreaName": "大庆市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230700,
+                          "AreaName": "伊春市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230800,
+                          "AreaName": "佳木斯市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 230900,
+                          "AreaName": "七台河市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 231000,
+                          "AreaName": "牡丹江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 231100,
+                          "AreaName": "黑河市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 231200,
+                          "AreaName": "绥化市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 232700,
+                          "AreaName": "大兴安岭地区",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 310000,
+             "AreaName": "上海市",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 310000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 310101,
+                          "AreaName": "黄浦区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310104,
+                          "AreaName": "徐汇区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310105,
+                          "AreaName": "长宁区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310106,
+                          "AreaName": "静安区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310107,
+                          "AreaName": "普陀区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310108,
+                          "AreaName": "闸北区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310109,
+                          "AreaName": "虹口区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310110,
+                          "AreaName": "杨浦区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310112,
+                          "AreaName": "闵行区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310113,
+                          "AreaName": "宝山区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310114,
+                          "AreaName": "嘉定区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310115,
+                          "AreaName": "浦东新区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310116,
+                          "AreaName": "金山区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310117,
+                          "AreaName": "松江区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310118,
+                          "AreaName": "青浦区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310120,
+                          "AreaName": "奉贤区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 310230,
+                          "AreaName": "崇明县",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 320000,
+             "AreaName": "江苏省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 320000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 320100,
+                          "AreaName": "南京市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320200,
+                          "AreaName": "无锡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320300,
+                          "AreaName": "徐州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320400,
+                          "AreaName": "常州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320500,
+                          "AreaName": "苏州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320600,
+                          "AreaName": "南通市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320700,
+                          "AreaName": "连云港市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320800,
+                          "AreaName": "淮安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 320900,
+                          "AreaName": "盐城市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 321000,
+                          "AreaName": "扬州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 321100,
+                          "AreaName": "镇江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 321200,
+                          "AreaName": "泰州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 321300,
+                          "AreaName": "宿迁市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 330000,
+             "AreaName": "浙江省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 330000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 330100,
+                          "AreaName": "杭州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330200,
+                          "AreaName": "宁波市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330300,
+                          "AreaName": "温州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330400,
+                          "AreaName": "嘉兴市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330500,
+                          "AreaName": "湖州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330600,
+                          "AreaName": "绍兴市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330700,
+                          "AreaName": "金华市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330800,
+                          "AreaName": "衢州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 330900,
+                          "AreaName": "舟山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 331000,
+                          "AreaName": "台州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 331100,
+                          "AreaName": "丽水市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 340000,
+             "AreaName": "安徽省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 340000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 340100,
+                          "AreaName": "合肥市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340200,
+                          "AreaName": "芜湖市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340300,
+                          "AreaName": "蚌埠市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340400,
+                          "AreaName": "淮南市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340500,
+                          "AreaName": "马鞍山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340600,
+                          "AreaName": "淮北市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340700,
+                          "AreaName": "铜陵市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 340800,
+                          "AreaName": "安庆市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341000,
+                          "AreaName": "黄山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341100,
+                          "AreaName": "滁州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341200,
+                          "AreaName": "阜阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341300,
+                          "AreaName": "宿州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341500,
+                          "AreaName": "六安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341600,
+                          "AreaName": "亳州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341700,
+                          "AreaName": "池州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 341800,
+                          "AreaName": "宣城市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 350000,
+             "AreaName": "福建省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 350000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 350100,
+                          "AreaName": "福州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350200,
+                          "AreaName": "厦门市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350300,
+                          "AreaName": "莆田市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350400,
+                          "AreaName": "三明市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350500,
+                          "AreaName": "泉州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350600,
+                          "AreaName": "漳州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350700,
+                          "AreaName": "南平市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350800,
+                          "AreaName": "龙岩市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 350900,
+                          "AreaName": "宁德市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 360000,
+             "AreaName": "江西省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 360000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 360100,
+                          "AreaName": "南昌市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360200,
+                          "AreaName": "景德镇市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360300,
+                          "AreaName": "萍乡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360400,
+                          "AreaName": "九江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360500,
+                          "AreaName": "新余市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360600,
+                          "AreaName": "鹰潭市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360700,
+                          "AreaName": "赣州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360800,
+                          "AreaName": "吉安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 360900,
+                          "AreaName": "宜春市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 361000,
+                          "AreaName": "抚州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 361100,
+                          "AreaName": "上饶市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 370000,
+             "AreaName": "山东省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 370000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 370100,
+                          "AreaName": "济南市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370200,
+                          "AreaName": "青岛市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370300,
+                          "AreaName": "淄博市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370400,
+                          "AreaName": "枣庄市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370500,
+                          "AreaName": "东营市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370600,
+                          "AreaName": "烟台市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370700,
+                          "AreaName": "潍坊市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370800,
+                          "AreaName": "济宁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 370900,
+                          "AreaName": "泰安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371000,
+                          "AreaName": "威海市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371100,
+                          "AreaName": "日照市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371200,
+                          "AreaName": "莱芜市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371300,
+                          "AreaName": "临沂市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371400,
+                          "AreaName": "德州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371500,
+                          "AreaName": "聊城市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371600,
+                          "AreaName": "滨州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 371700,
+                          "AreaName": "菏泽市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 410000,
+             "AreaName": "河南省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 410000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 410100,
+                          "AreaName": "郑州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410200,
+                          "AreaName": "开封市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410300,
+                          "AreaName": "洛阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410400,
+                          "AreaName": "平顶山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410500,
+                          "AreaName": "安阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410600,
+                          "AreaName": "鹤壁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410700,
+                          "AreaName": "新乡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410800,
+                          "AreaName": "焦作市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 410900,
+                          "AreaName": "濮阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411000,
+                          "AreaName": "许昌市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411100,
+                          "AreaName": "漯河市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411200,
+                          "AreaName": "三门峡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411300,
+                          "AreaName": "南阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411400,
+                          "AreaName": "商丘市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411500,
+                          "AreaName": "信阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411600,
+                          "AreaName": "周口市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 411700,
+                          "AreaName": "驻马店市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 419000,
+                          "AreaName": "省直辖县级行政区划",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 420000,
+             "AreaName": "湖北省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 420000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 420100,
+                          "AreaName": "武汉市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420200,
+                          "AreaName": "黄石市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420300,
+                          "AreaName": "十堰市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420500,
+                          "AreaName": "宜昌市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420600,
+                          "AreaName": "襄阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420700,
+                          "AreaName": "鄂州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420800,
+                          "AreaName": "荆门市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 420900,
+                          "AreaName": "孝感市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 421000,
+                          "AreaName": "荆州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 421100,
+                          "AreaName": "黄冈市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 421200,
+                          "AreaName": "咸宁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 421300,
+                          "AreaName": "随州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 422800,
+                          "AreaName": "恩施土家族苗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 429000,
+                          "AreaName": "省直辖县级行政区划",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 430000,
+             "AreaName": "湖南省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 430000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 430100,
+                          "AreaName": "长沙市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430200,
+                          "AreaName": "株洲市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430300,
+                          "AreaName": "湘潭市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430400,
+                          "AreaName": "衡阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430500,
+                          "AreaName": "邵阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430600,
+                          "AreaName": "岳阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430700,
+                          "AreaName": "常德市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430800,
+                          "AreaName": "张家界市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 430900,
+                          "AreaName": "益阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 431000,
+                          "AreaName": "郴州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 431100,
+                          "AreaName": "永州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 431200,
+                          "AreaName": "怀化市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 431300,
+                          "AreaName": "娄底市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 433100,
+                          "AreaName": "湘西土家族苗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 440000,
+             "AreaName": "广东省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 440000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 440100,
+                          "AreaName": "广州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440200,
+                          "AreaName": "韶关市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440300,
+                          "AreaName": "深圳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440400,
+                          "AreaName": "珠海市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440500,
+                          "AreaName": "汕头市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440600,
+                          "AreaName": "佛山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440700,
+                          "AreaName": "江门市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440800,
+                          "AreaName": "湛江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 440900,
+                          "AreaName": "茂名市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441200,
+                          "AreaName": "肇庆市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441300,
+                          "AreaName": "惠州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441400,
+                          "AreaName": "梅州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441500,
+                          "AreaName": "汕尾市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441600,
+                          "AreaName": "河源市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441700,
+                          "AreaName": "阳江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441800,
+                          "AreaName": "清远市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 441900,
+                          "AreaName": "东莞市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 442000,
+                          "AreaName": "中山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 445100,
+                          "AreaName": "潮州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 445200,
+                          "AreaName": "揭阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 445300,
+                          "AreaName": "云浮市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 450000,
+             "AreaName": "广西壮族自治区",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 450000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 450100,
+                          "AreaName": "南宁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450200,
+                          "AreaName": "柳州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450300,
+                          "AreaName": "桂林市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450400,
+                          "AreaName": "梧州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450500,
+                          "AreaName": "北海市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450600,
+                          "AreaName": "防城港市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450700,
+                          "AreaName": "钦州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450800,
+                          "AreaName": "贵港市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 450900,
+                          "AreaName": "玉林市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 451000,
+                          "AreaName": "百色市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 451100,
+                          "AreaName": "贺州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 451200,
+                          "AreaName": "河池市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 451300,
+                          "AreaName": "来宾市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 451400,
+                          "AreaName": "崇左市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 460000,
+             "AreaName": "海南省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 460000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 460100,
+                          "AreaName": "海口市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 460200,
+                          "AreaName": "三亚市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 460300,
+                          "AreaName": "三沙市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 469000,
+                          "AreaName": "省直辖县级行政区划",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 500000,
+             "AreaName": "重庆市",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 500000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 500101,
+                          "AreaName": "万州区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500102,
+                          "AreaName": "涪陵区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500103,
+                          "AreaName": "渝中区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500104,
+                          "AreaName": "大渡口区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500105,
+                          "AreaName": "江北区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500106,
+                          "AreaName": "沙坪坝区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500107,
+                          "AreaName": "九龙坡区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500108,
+                          "AreaName": "南岸区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500109,
+                          "AreaName": "北碚区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500110,
+                          "AreaName": "綦江区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500111,
+                          "AreaName": "大足区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500112,
+                          "AreaName": "渝北区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500113,
+                          "AreaName": "巴南区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500114,
+                          "AreaName": "黔江区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500115,
+                          "AreaName": "长寿区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500116,
+                          "AreaName": "江津区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500117,
+                          "AreaName": "合川区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500118,
+                          "AreaName": "永川区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500119,
+                          "AreaName": "南川区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500120,
+                          "AreaName": "璧山区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500151,
+                          "AreaName": "铜梁区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500223,
+                          "AreaName": "潼南县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500226,
+                          "AreaName": "荣昌县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500228,
+                          "AreaName": "梁平县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500229,
+                          "AreaName": "城口县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500230,
+                          "AreaName": "丰都县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500231,
+                          "AreaName": "垫江县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500232,
+                          "AreaName": "武隆县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500233,
+                          "AreaName": "忠县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500234,
+                          "AreaName": "开县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500235,
+                          "AreaName": "云阳县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500236,
+                          "AreaName": "奉节县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500237,
+                          "AreaName": "巫山县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500238,
+                          "AreaName": "巫溪县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500240,
+                          "AreaName": "石柱土家族自治县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500241,
+                          "AreaName": "秀山土家族苗族自治县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500242,
+                          "AreaName": "酉阳土家族苗族自治县",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 500243,
+                          "AreaName": "彭水苗族土家族自治县",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 510000,
+             "AreaName": "四川省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 510000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 510100,
+                          "AreaName": "成都市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510300,
+                          "AreaName": "自贡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510400,
+                          "AreaName": "攀枝花市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510500,
+                          "AreaName": "泸州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510600,
+                          "AreaName": "德阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510700,
+                          "AreaName": "绵阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510800,
+                          "AreaName": "广元市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 510900,
+                          "AreaName": "遂宁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511000,
+                          "AreaName": "内江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511100,
+                          "AreaName": "乐山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511300,
+                          "AreaName": "南充市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511400,
+                          "AreaName": "眉山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511500,
+                          "AreaName": "宜宾市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511600,
+                          "AreaName": "广安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511700,
+                          "AreaName": "达州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511800,
+                          "AreaName": "雅安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 511900,
+                          "AreaName": "巴中市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 512000,
+                          "AreaName": "资阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 513200,
+                          "AreaName": "阿坝藏族羌族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 513300,
+                          "AreaName": "甘孜藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 513400,
+                          "AreaName": "凉山彝族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 520000,
+             "AreaName": "贵州省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 520000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 520100,
+                          "AreaName": "贵阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 520200,
+                          "AreaName": "六盘水市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 520300,
+                          "AreaName": "遵义市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 520400,
+                          "AreaName": "安顺市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 520500,
+                          "AreaName": "毕节市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 520600,
+                          "AreaName": "铜仁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 522300,
+                          "AreaName": "黔西南布依族苗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 522600,
+                          "AreaName": "黔东南苗族侗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 522700,
+                          "AreaName": "黔南布依族苗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 530000,
+             "AreaName": "云南省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 530000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 530100,
+                          "AreaName": "昆明市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530300,
+                          "AreaName": "曲靖市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530400,
+                          "AreaName": "玉溪市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530500,
+                          "AreaName": "保山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530600,
+                          "AreaName": "昭通市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530700,
+                          "AreaName": "丽江市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530800,
+                          "AreaName": "普洱市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 530900,
+                          "AreaName": "临沧市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 532300,
+                          "AreaName": "楚雄彝族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 532500,
+                          "AreaName": "红河哈尼族彝族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 532600,
+                          "AreaName": "文山壮族苗族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 532800,
+                          "AreaName": "西双版纳傣族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 532900,
+                          "AreaName": "大理白族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 533100,
+                          "AreaName": "德宏傣族景颇族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 533300,
+                          "AreaName": "怒江傈僳族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 533400,
+                          "AreaName": "迪庆藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 540000,
+             "AreaName": "西藏自治区",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 540000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 540100,
+                          "AreaName": "拉萨市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 540200,
+                          "AreaName": "日喀则市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 542100,
+                          "AreaName": "昌都地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 542200,
+                          "AreaName": "山南地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 542400,
+                          "AreaName": "那曲地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 542500,
+                          "AreaName": "阿里地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 542600,
+                          "AreaName": "林芝地区",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 610000,
+             "AreaName": "陕西省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 610000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 610100,
+                          "AreaName": "西安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610200,
+                          "AreaName": "铜川市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610300,
+                          "AreaName": "宝鸡市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610400,
+                          "AreaName": "咸阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610500,
+                          "AreaName": "渭南市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610600,
+                          "AreaName": "延安市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610700,
+                          "AreaName": "汉中市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610800,
+                          "AreaName": "榆林市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 610900,
+                          "AreaName": "安康市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 611000,
+                          "AreaName": "商洛市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 620000,
+             "AreaName": "甘肃省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 620000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 620100,
+                          "AreaName": "兰州市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620200,
+                          "AreaName": "嘉峪关市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620300,
+                          "AreaName": "金昌市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620400,
+                          "AreaName": "白银市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620500,
+                          "AreaName": "天水市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620600,
+                          "AreaName": "武威市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620700,
+                          "AreaName": "张掖市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620800,
+                          "AreaName": "平凉市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 620900,
+                          "AreaName": "酒泉市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 621000,
+                          "AreaName": "庆阳市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 621100,
+                          "AreaName": "定西市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 621200,
+                          "AreaName": "陇南市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 622900,
+                          "AreaName": "临夏回族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 623000,
+                          "AreaName": "甘南藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 630000,
+             "AreaName": "青海省",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 630000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 630100,
+                          "AreaName": "西宁市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 630200,
+                          "AreaName": "海东市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632200,
+                          "AreaName": "海北藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632300,
+                          "AreaName": "黄南藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632500,
+                          "AreaName": "海南藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632600,
+                          "AreaName": "果洛藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632700,
+                          "AreaName": "玉树藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 632800,
+                          "AreaName": "海西蒙古族藏族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 640000,
+             "AreaName": "宁夏回族自治区",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 640000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 640100,
+                          "AreaName": "银川市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 640200,
+                          "AreaName": "石嘴山市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 640300,
+                          "AreaName": "吴忠市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 640400,
+                          "AreaName": "固原市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 640500,
+                          "AreaName": "中卫市",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             },
+             {
+             "AreaCode": 650000,
+             "AreaName": "新疆维吾尔自治区",
+             "AreaType": 1,
+             "Children": [
+                          {
+                          "AreaCode": 650000,
+                          "AreaName": "不限",
+                          "AreaType": 1
+                          },
+                          {
+                          "AreaCode": 650100,
+                          "AreaName": "乌鲁木齐市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 650200,
+                          "AreaName": "克拉玛依市",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652100,
+                          "AreaName": "吐鲁番地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652200,
+                          "AreaName": "哈密地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652300,
+                          "AreaName": "昌吉回族自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652700,
+                          "AreaName": "博尔塔拉蒙古自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652800,
+                          "AreaName": "巴音郭楞蒙古自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 652900,
+                          "AreaName": "阿克苏地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 653000,
+                          "AreaName": "克孜勒苏柯尔克孜自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 653100,
+                          "AreaName": "喀什地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 653200,
+                          "AreaName": "和田地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 654000,
+                          "AreaName": "伊犁哈萨克自治州",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 654200,
+                          "AreaName": "塔城地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 654300,
+                          "AreaName": "阿勒泰地区",
+                          "AreaType": 2,
+                          "Children": []
+                          },
+                          {
+                          "AreaCode": 659000,
+                          "AreaName": "自治区直辖县级行政区划",
+                          "AreaType": 2,
+                          "Children": []
+                          }
+                          ]
+             }
+             ],
+    "info": "获取成功",
+    "status": 1
+}
