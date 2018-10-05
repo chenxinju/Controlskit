@@ -9,22 +9,22 @@
 @implementation UIView (Postion)
 
 /**
- * 获取屏幕宽度
- *
- * @return 屏幕宽度
- */
-CGFloat screenWidth() {
-    return [[UIScreen mainScreen] bounds].size.width;
-}
-
-/**
- * 获取屏幕高度
- *
- * @return 屏幕高度
- */
-CGFloat screenHeight() {
-    return [[UIScreen mainScreen] bounds].size.height;
-}
+// * 获取屏幕宽度
+// *
+// * @return 屏幕宽度
+// */
+//CGFloat screenWidth() {
+//    return [[UIScreen mainScreen] bounds].size.width;
+//}
+//
+///**
+// * 获取屏幕高度
+// *
+// * @return 屏幕高度
+// */
+//CGFloat screenHeight() {
+//    return [[UIScreen mainScreen] bounds].size.height;
+//}
 
 /**
  *  根据 frame 返回宽高

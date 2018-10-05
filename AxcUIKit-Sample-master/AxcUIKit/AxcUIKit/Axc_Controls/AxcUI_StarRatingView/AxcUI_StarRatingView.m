@@ -297,12 +297,12 @@
     CGContextFillRect(context, rect);
     
     CGFloat availableWidth = rect.size.width - (_axcUI_spacing * (_axcUI_maximumValue - 1)) - 2;
-    CGFloat cellWidth = (availableWidth / _axcUI_maximumValue);
-    CGFloat starSide = (cellWidth <= rect.size.height) ? cellWidth : rect.size.height;
+    CGFloat cellsWidth = (availableWidth / _axcUI_maximumValue);
+    CGFloat starSide = (cellsWidth <= rect.size.height) ? cellsWidth : rect.size.height;
     starSide = (self.shouldUseImages) ? starSide : (starSide - _axcUI_starBorderWidth);
     
     for (int idx = 0; idx < _axcUI_maximumValue; idx++) {
-        CGPoint center = CGPointMake(cellWidth*idx + cellWidth/2 + _axcUI_spacing*idx + 1, rect.size.height/2);
+        CGPoint center = CGPointMake(cellsWidth*idx + cellsWidth/2 + _axcUI_spacing*idx + 1, rect.size.height/2);
         CGRect frame = CGRectMake(center.x - starSide/2, center.y - starSide/2, starSide, starSide);
         BOOL highlighted = (idx+1 <= ceilf(_value));
         if (_axcUI_allowsHalfStars && highlighted && (idx+1 > _value)) {
@@ -391,9 +391,9 @@
 }
 
 - (void)_handleTouch:(UITouch *)touch {
-    CGFloat cellWidth = self.bounds.size.width / _axcUI_maximumValue;
+    CGFloat cellsWidth = self.bounds.size.width / _axcUI_maximumValue;
     CGPoint location = [touch locationInView:self];
-    CGFloat value = location.x / cellWidth;
+    CGFloat value = location.x / cellsWidth;
     if (_axcUI_allowsHalfStars) {
         if (_axcUI_accurateHalfStars) {
             value = value;

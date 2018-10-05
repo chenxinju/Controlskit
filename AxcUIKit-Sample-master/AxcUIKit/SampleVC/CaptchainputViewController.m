@@ -28,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     CGFloat x = 30;
     CGFloat w = self.view.bounds.size.width - x * 2;

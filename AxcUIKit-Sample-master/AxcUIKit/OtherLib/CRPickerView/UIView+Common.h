@@ -8,18 +8,18 @@
 
 @interface UIView (Postion)
 
-/**
- * 获取屏幕宽度
- *
- * @return 屏幕宽度
- */
-CGFloat screenWidth();
-/**
- * 获取屏幕高度
- *
- * @return 屏幕高度
- */
-CGFloat screenHeight();
+///**
+// * 获取屏幕宽度
+// *
+// * @return 屏幕宽度
+// */
+//CGFloat KScreenWidth();
+///**
+// * 获取屏幕高度
+// *
+// * @return 屏幕高度
+// */
+//CGFloat KScreenHeight();
 /**
  *  根据 frame 返回宽高
  *

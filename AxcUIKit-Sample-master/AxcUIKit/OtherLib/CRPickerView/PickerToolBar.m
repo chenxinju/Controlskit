@@ -61,7 +61,7 @@
     _titleColor = [UIColor blackColor];
     _borderButtonColor = RGB(205, 205, 205);
     
-    self.bounds = CGRectMake(0, 0, screenWidth(), 44);
+    self.bounds = CGRectMake(0, 0, KScreenWidth, 44);
     [self setBackgroundColor:[UIColor whiteColor]];
     [self addSubview:self.labelTitle];
     [self addSubview:self.buttonLeft];
@@ -124,7 +124,7 @@
     if (!_buttonRight) {
         CGFloat rightW = 44;
         CGFloat rightH = 34;
-        CGFloat rightX = screenWidth() - rightW - 16;
+        CGFloat rightX = KScreenWidth - rightW - 16;
         CGFloat rightY = 5;
         _buttonRight = [[UIButton alloc]initWithFrame:CGRectMake(rightX, rightY, rightW, rightH)];
         [_buttonRight setTitleColor:self.titleColor forState:UIControlStateNormal];
@@ -138,7 +138,7 @@
     if (!_labelTitle) {
         CGFloat titleX = maxX(self.buttonLeft) + 5;
         CGFloat titleY = 0;
-        CGFloat titleW = screenWidth() - titleX * 2;
+        CGFloat titleW = KScreenWidth - titleX * 2;
         CGFloat titleH = 44;
         _labelTitle = [[UILabel alloc]initWithFrame:CGRectMake(titleX, titleY, titleW, titleH)];
         [_labelTitle setTextAlignment:NSTextAlignmentCenter];

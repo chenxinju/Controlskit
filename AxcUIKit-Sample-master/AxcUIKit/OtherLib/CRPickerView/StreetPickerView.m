@@ -59,7 +59,7 @@ static CGFloat const PickerViewLabelWeight = 32;
 
 - (UIView *)lineView {
     if (!_lineView) {
-        _lineView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screenWidth(), 0.5)];
+        _lineView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 0.5)];
         [_lineView setBackgroundColor:RGB(205, 205, 205)];
     }
     return _lineView;
@@ -68,10 +68,10 @@ static CGFloat const PickerViewLabelWeight = 32;
 - (UIPickerView *)pickerView
 {
     if (!_pickerView) {
-        CGFloat pickerW = screenWidth();
+        CGFloat pickerW = KScreenWidth;
         CGFloat pickerH = PickerViewHeight - 44;
         CGFloat pickerX = 0;
-        CGFloat pickerY = screenHeight() + 44;
+        CGFloat pickerY = KScreenHeight + 44;
         _pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(pickerX, pickerY, pickerW, pickerH)];
         [_pickerView setBackgroundColor:[UIColor whiteColor]];
         [_pickerView setDataSource:self];
@@ -89,7 +89,7 @@ static CGFloat const PickerViewLabelWeight = 32;
                                           cancelAction:@selector(dismiss)
                                               okAction:@selector(selectedOk)];
         _toolbar.x = 0;
-        _toolbar.y = screenHeight();
+        _toolbar.y = KScreenHeight;
     }
     return _toolbar;
 }
