@@ -25,6 +25,7 @@
 #import "UITableView+Extension.h"
 #import "UIColor+Extension.h"
 #import "NSString+Extension.h"
+#import "UIImage+XJIamge.h"
 #import "UIImage+Extension.h"
 #import "NSObject+ModelParse.h"
 #import "UIViewController+Extension.h"

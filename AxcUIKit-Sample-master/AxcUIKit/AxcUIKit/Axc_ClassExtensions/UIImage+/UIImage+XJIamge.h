@@ -80,4 +80,5 @@
  @return 返回图片
  */
 + (UIImage *)imageWithResizedImage:(NSString *)name capWidth:(CGFloat)width capHeight:(CGFloat)height;
+
 @end

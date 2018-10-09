@@ -54,4 +54,25 @@
                                      iconWidth:(CGFloat)iconWidth;
 
 
+/**
+ 生成二维码图片
+
+ @param dataDic 二维码中的信息
+ @param size 二维码Size
+ @param waterImage 水印图片
+ @return 一个二维码图片，水印在二维码中央
+ */
++ (UIImage *)qrCodeImageForDataDic:(NSDictionary *)dataDic size:(CGSize)size waterImage:(UIImage *)waterImage;
+
+/**
+ 修改二维码颜色
+
+ @param image 二维码图片
+ @param red red
+ @param green green
+ @param blue blue
+ @return 修改颜色后的二维码图片
+ */
++ (UIImage *)changeColorWithQRCodeImage:(UIImage *)image red:(NSUInteger)red green:(NSUInteger)green blue:(NSUInteger)blue;
+
 @end
