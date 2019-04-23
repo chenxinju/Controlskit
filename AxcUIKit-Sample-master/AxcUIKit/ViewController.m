@@ -221,7 +221,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
         [Group1 addObject:@{@"controlsName":@"TextField+",@"describeName":@"占位符参数修改",@"VCName":@"AxcModifyPlaceholderVC"}];
         [Group1 addObject:@{@"controlsName":@"ViewController+",@"describeName":@"动画推出View/VC",@"VCName":@"AxcSemiModalVC"}];
 
-        [Group1 addObject:@{@"controlsName":@"测试",@"describeName":@"测试",@"VCName":@"TestTwoVC"}];
+        [Group1 addObject:@{@"controlsName":@"测试RSA解密",@"describeName":@"解密测试",@"VCName":@"TestTwoVC"}];
 
         NSMutableArray *Group2 = [NSMutableArray array];
 
