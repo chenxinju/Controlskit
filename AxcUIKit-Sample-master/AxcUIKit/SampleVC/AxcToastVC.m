@@ -28,7 +28,7 @@ UITableViewDataSource
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = YES;
-    self.showTime = 1;
+    self.showTime = 2;
     [self.view addSubview:self.tableView];
 }
 
