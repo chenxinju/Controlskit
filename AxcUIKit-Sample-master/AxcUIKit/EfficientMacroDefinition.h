@@ -11,13 +11,39 @@
 #define EfficientMacroDefinition_h
 
 //-------------------获取设备大小-------------------------
-//NavBar高度
-#define NavigationBar_HEIGHT 44
-//NavigationHeader_HEIGHT高度
-#define NavigationHeader_HEIGHT 64
+
+#define IPhoneX_All ({\
+int tmp = 0;\
+if (@available(iOS 11.0, *)) {\
+if ([UIApplication sharedApplication].delegate.window.safeAreaInsets.top > 20) {\
+tmp = 1;\
+}else{\
+tmp = 0;\
+}\
+}else{\
+tmp = 0;\
+}\
+tmp;\
+})
+
+#define MAINSTATUSHEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+//状态栏高度
+#define NavigationBar_HEIGHT [UIApplication sharedApplication].delegate.window.safeAreaInsets.top
+//导航栏高度
+#define NavigationHeader_HEIGHT 44 + NavigationBar_HEIGHT
+
+#define Height_TapBar (IPhoneX_All ? 83.0 : 49.0)
+
+#define NAVCENTERY MAINSTATUSHEIGHT + (NavigationHeader_HEIGHT - MAINSTATUSHEIGHT)/2.0
+
+#define Height_TapBarSafeBottomMargin (IPhoneX_All ? 34.0 : 0)
+
 //获取屏幕 宽度、高度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+
 
 //-------------------打印日志-------------------------
 #pragma mark - 自定义AxcLog日志打印

@@ -48,7 +48,8 @@
     self.lines = @[].mutableCopy;
     
     UITextField *textField = [[UITextField alloc] init];
-    textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+   
+//    textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     textField.keyboardType = UIKeyboardTypeNumberPad;
     [textField addTarget:self action:@selector(tfEditingChanged:) forControlEvents:(UIControlEventEditingChanged)];
     [self addSubview:textField];
@@ -147,6 +148,11 @@
     
     if (textField.text.length >= self.itemCount) {
         [textField resignFirstResponder];
+        
+        if (self.editBlcok) {
+            self.editBlcok(textField.text);
+        }
+        
     }
 }
 
@@ -162,14 +168,15 @@
 
 - (void)clickMaskView
 {
-    [self.textField becomeFirstResponder];
+    self.textField.tintColor = [UIColor redColor];
+   [self.textField becomeFirstResponder];
 }
 
-- (BOOL)endEditing:(BOOL)force
-{
-    [self.textField endEditing:force];
-    return [super endEditing:force];
-}
+//- (BOOL)endEditing:(BOOL)force
+//{
+//    [self.textField endEditing:force];
+//    return [super endEditing:force];
+//}
 
 - (NSString *)code
 {

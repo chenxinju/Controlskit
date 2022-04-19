@@ -53,17 +53,17 @@
      [self.window makeKeyAndVisible];
     
     //引导页只运行一次
-//        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//        NSString *launched = [userDefaults objectForKey:@"launched"];
-//        if (!launched)
-//        {
-//            [self guidePages];
-//            launched = @"YES";
-//            [userDefaults setObject:launched forKey:@"launched"];
-//            [userDefaults synchronize];
-//        }
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSString *launched = [userDefaults objectForKey:@"launched"];
+        if (!launched)
+        {
+            [self guidePages];
+            launched = @"YES";
+            [userDefaults setObject:launched forKey:@"launched"];
+            [userDefaults synchronize];
+        }
 //    一直运行
-    [self guidePages];
+//    [self guidePages];
     
     return YES;
 }

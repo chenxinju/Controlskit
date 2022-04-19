@@ -9,7 +9,7 @@ target 'AxcUIKit' do
   pod 'SDWebImage'
   pod 'MJRefresh'
   pod 'AFNetworking'
-  
+  pod 'ReactiveCocoa', '~> 2.5'
 
 
 end

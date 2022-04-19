@@ -24,17 +24,17 @@ singleton_implementation(WYNetworking)//单例实现
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
     
-    [[self sharedSessionManager] GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [[self sharedSessionManager] GET:URLString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        
     }];
+    
 }
 
 
@@ -51,20 +51,16 @@ singleton_implementation(WYNetworking)//单例实现
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
     
-    [[self sharedSessionManager] GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        
+    [[self sharedSessionManager] GET:URLString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         if(progress) {progress(downloadProgress);}
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
+    
 }
 
 
@@ -80,17 +76,16 @@ singleton_implementation(WYNetworking)//单例实现
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
     
-    [[self sharedSessionManager] POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        if (success) {success(responseObject);}
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        if (failure) {failure(error);}
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    }];
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            if (success) {success(responseObject);}
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if (failure) {failure(error);}
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        }];
+    
 }
 
 /**
@@ -106,20 +101,17 @@ singleton_implementation(WYNetworking)//单例实现
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
     
-    [[self sharedSessionManager] POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-        
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
         if(progress) {progress(uploadProgress);}
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        if (success) {success(responseObject);}
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        if (failure) {failure(error);}
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    }];
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            if (success) {success(responseObject);}
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            if (failure) {failure(error);}
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        }];
+    
+    
 }
 
 
@@ -136,9 +128,7 @@ singleton_implementation(WYNetworking)//单例实现
 - (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters fileModelArray:(NSArray<WYFileModel *> *)modelArray progress:(Progress)progress success:(Success)success failure:(Failure)failure {
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
-    
-    [[self sharedSessionManager] POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i = 0; i < modelArray.count; i++)
         {
             @autoreleasepool {
@@ -149,21 +139,16 @@ singleton_implementation(WYNetworking)//单例实现
                 fileModel = nil;
             }
         }
-        
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
         if(progress) {progress(uploadProgress);}
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
+    
 }
 
 
@@ -180,26 +165,19 @@ singleton_implementation(WYNetworking)//单例实现
 - (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters fileModel:(WYFileModel *)fileModel progress:(Progress)progress success:(Success)success failure:(Failure)failure {
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
-    
-    [[self sharedSessionManager] POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         [formData appendPartWithFileData:fileModel.fileData name:fileModel.folderName fileName:fileModel.fileName mimeType:fileModel.mimeType];
         fileModel.fileData = nil;
-        
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
         if(progress) {progress(uploadProgress);}
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
+    
 }
 
 
@@ -216,9 +194,7 @@ singleton_implementation(WYNetworking)//单例实现
 - (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters urlFileModelArray:(NSArray <WYFileModel *>*)modelArray progress:(Progress)progress success:(Success)success failure:(Failure)failure {
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
-    
-    [[self sharedSessionManager] POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i = 0; i < modelArray.count; i++)
         {
             @autoreleasepool {
@@ -231,19 +207,16 @@ singleton_implementation(WYNetworking)//单例实现
             }
         }
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
         if(progress) {progress(uploadProgress);}
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
+    
+    
 }
 
 
@@ -260,27 +233,21 @@ singleton_implementation(WYNetworking)//单例实现
 - (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters urlFileModel:(WYFileModel *)fileModel progress:(Progress)progress success:(Success)success failure:(Failure)failure {
     
     [self networkMonitoring:^(BOOL hasNetwork) {if(hasNetwork == NO) {return;}}];
-    
-    [[self sharedSessionManager] POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        
+    [[self sharedSessionManager] POST:URLString parameters:parameters headers:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         //根据本地路径获取url(相册等资源上传)
         NSURL *fileUrl = [NSURL fileURLWithPath:fileModel.fileUrl];
         [formData appendPartWithFileURL:fileUrl name:fileModel.fileName fileName:fileModel.fileName mimeType:fileModel.mimeType error:nil];
-        
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        
         if(progress) {progress(uploadProgress);}
-        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (success) {success(responseObject);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {failure(error);}
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
+    
 }
 
 

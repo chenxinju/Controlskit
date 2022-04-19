@@ -54,7 +54,7 @@
     
     // --------------------------------------------------------------------
     
-    y = CGRectGetMaxY(code1View.frame) + 80;
+    y = CGRectGetMaxY(code1View.frame) + 40;
     
     UILabel *labB = [UILabel new];
     labB.textColor = [UIColor orangeColor];
@@ -73,7 +73,7 @@
     
     // --------------------------------------------------------------------
     
-    y = CGRectGetMaxY(code2View.frame) + 80;
+    y = CGRectGetMaxY(code2View.frame) + 40;
     
     UILabel *labC = [UILabel new];
     labC.textColor = [UIColor orangeColor];
@@ -84,10 +84,13 @@
     
     y = CGRectGetMaxY(labC.frame) + 30;
     
-    HWTextCodeView *code3View = [[HWTextCodeView alloc] initWithCount:6 margin:20];
-    code3View.frame = CGRectMake(x, y, w, h);
+    HWTextCodeView *code3View = [[HWTextCodeView alloc] initWithCount:4 margin:20];
+    code3View.frame = CGRectMake(x, y, w/2, h);
     [self.view addSubview:code3View];
     self.code3View = code3View;
+    code3View.editBlcok = ^(NSString * _Nonnull text) {
+        NSLog(@"code3View。text---%@",text);
+    };
     
     
     // --------------------------------------------------------------------
@@ -102,6 +105,8 @@
     [self.code1View endEditing:YES];
     [self.code2View endEditing:YES];
     [self.code3View endEditing:YES];
+    
+    //NSLog(@"code3View.code---%@",self.code3View.code);
 }
 
 

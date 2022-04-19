@@ -34,4 +34,5 @@
 #import "FMPrefixHeader.pch"
 #import "GlobalHeader.pch"
 #import <MJRefresh/MJRefresh.h>
+#import <SDWebImage/SDImageCache.h>
 #endif

@@ -86,9 +86,10 @@
 - (AxcUI_BadgeView *)badgeView{
     if (!_badgeView) {
         _badgeView = [[AxcUI_BadgeView alloc] init];
-        _badgeView.axcUI_Size = CGSizeMake(24, 20);
-        _badgeView.axcUI_text = @"1211";
-        _badgeView.axcUI_font = [UIFont systemFontOfSize:14];
+        _badgeView.axcUI_minimumWidth = 12;
+        _badgeView.axcUI_Size = CGSizeMake(12, 12);
+        _badgeView.axcUI_text = @"5";
+        _badgeView.axcUI_font = [UIFont systemFontOfSize:8];
     }
     return _badgeView;
 }

@@ -33,6 +33,7 @@
 + (CGSize)zoomImageSizeFromUrl:(NSString *)imageUrl placeholderSize:(CGSize)placeholderSize {
     
     CGSize size = CGSizeMake(placeholderSize.width, placeholderSize.height);
+    
     UIImage *cacaeImage = [[SDImageCache sharedImageCache]imageFromDiskCacheForKey:imageUrl];
     if (cacaeImage != nil) {
         

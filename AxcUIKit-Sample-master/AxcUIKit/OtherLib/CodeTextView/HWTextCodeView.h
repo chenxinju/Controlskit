@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface HWTextCodeView : UIView
 
+@property (nonatomic, copy) void(^editBlcok)(NSString *text);
+
 /// 当前输入的内容
 @property (nonatomic, copy, readonly) NSString *code;
 
