@@ -408,6 +408,10 @@
 - (void)AxcUI_tagView:(AxcUI_TagView *)tagView didSelectTag:(UIView *)axctagView atIndex:(NSUInteger)index {
     if (_axcUI_enableTagSelection) {
         Axc_TagTextLabel *label = _tagLabels[index];
+        for (Axc_TagTextLabel *label in _tagLabels) {
+            label.selected = NO;
+        }
+        [self AxcUI_reloadData];
         
         if (!label.selected && _axcUI_selectionLimit > 0 && [self AxcUI_allSelectedTags].count + 1 > _axcUI_selectionLimit) {
             return;

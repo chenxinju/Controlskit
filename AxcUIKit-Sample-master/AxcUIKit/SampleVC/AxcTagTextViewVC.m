@@ -144,7 +144,8 @@
         _tagTextView.axcUI_Size = CGSizeMake(SCREEN_WIDTH - 20, 250);
         _tagTextView.center = self.view.center;
         _tagTextView.axcUI_Y = 100;
-        
+        _tagTextView.axcUI_enableTagSelection = YES;
+        _tagTextView.axcUI_manualCalculateHeight = YES;
         _tagTextView.axcUI_tagTextViewDelegate = self;
         _tagTextView.backgroundColor = [UIColor AxcUI_CloudColor];
     }
@@ -237,7 +238,20 @@
     }
 }
 
+- (void)AxcUI_tagTextView:(AxcUI_TagTextView *)tagTextView
+                didTapTag:(NSString *)tagText
+                  atIndex:(NSUInteger)index
+                 selected:(BOOL)selected {
+    
+    
+}
 
+
+- (void)AxcUI_tagTextView:(AxcUI_TagTextView *)tagTextView
+        updateContentSize:(CGSize)contentSize {
+    
+    
+}
 
 
 - (NSArray *)textArray{
