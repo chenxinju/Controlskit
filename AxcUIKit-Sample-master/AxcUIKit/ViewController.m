@@ -232,6 +232,7 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
         
         [Group2 addObject:@{@"controlsName":@"AxcUI_ActivityIndicatorView",@"describeName":@"动画View",@"VCName":@"AxcActivityIndicatorViewVC"}];
         [Group2 addObject:@{@"controlsName":@"AxcUI_ActivityHUD",@"describeName":@"加载指示器",@"VCName":@"AxcActivityHUDVC"}];
+        [Group2 addObject:@{@"controlsName":@"AxcUI_TextHUD",@"describeName":@"纯文字加载提示",@"VCName":@"AxcTextHUDVC"}];
         [Group2 addObject:@{@"controlsName":@"XWHUDManager",@"describeName":@"封装MBProgressHUD指示器",@"VCName":@"XWViewController"}];
 
         

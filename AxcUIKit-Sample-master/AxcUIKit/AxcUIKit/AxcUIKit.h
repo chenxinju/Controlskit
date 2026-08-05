@@ -93,6 +93,7 @@
 // ------------------
 #import "AxcUI_PhotoBrowser.h"          // 图片预览器
 #import "AxcUI_ActivityHUD.h"           // HUD指示器
+#import "AxcUI_TextHUD.h"               // 纯文字加载提示
 #import "AxcUI_BarrageView.h"           // 弹幕容器View
 #import "AxcBarrageRenderHeader.h"      // 弹幕动态渲染引擎
 #import "AxcUI_StarRatingView.h"        // 星级评分控件

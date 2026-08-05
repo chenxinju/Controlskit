@@ -107,7 +107,6 @@
 		048C0F46211AF7C600E2F22F /* red_packet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048C0F44211AF7C500E2F22F /* red_packet@2x.png */; };
 		048C0F47211AF7C600E2F22F /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048C0F45211AF7C500E2F22F /* avatar@2x.png */; };
 		048C0F4A211AF7D000E2F22F /* WXRedPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C0F49211AF7D000E2F22F /* WXRedPacketViewController.m */; };
-		048C0F84211AF95B00E2F22F /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C0F4F211AF95B00E2F22F /* libzbar.a */; };
 		048C0F85211AF95C00E2F22F /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 048C0F51211AF95B00E2F22F /* zbar-helpicons.png */; };
 		048C0F86211AF95C00E2F22F /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 048C0F52211AF95B00E2F22F /* zbar-samples.png */; };
 		048C0F87211AF95C00E2F22F /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 048C0F53211AF95B00E2F22F /* zbar-help.html */; };
@@ -244,6 +243,7 @@
 		884C22CA280E934200FD4D39 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C22C9280E934200FD4D39 /* MBProgressHUD.m */; };
 		884C22CD280E935500FD4D39 /* XWHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C22CC280E935500FD4D39 /* XWHUDManager.m */; };
 		8895EC2028B32C7F0068B53C /* ChartsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EC1F28B32C7F0068B53C /* ChartsTest.swift */; };
+		A1C7E4A51F09DE3800E0FAAA /* AxcUI_TextHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */; };
 		EA439CB71EE29E3100D992E7 /* AxcCellRearrangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */; };
 		EA439CC41EE2DE8400D992E7 /* TestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CC31EE2DE8400D992E7 /* TestTwoVC.m */; };
 		EA439CD11EE2FAB500D992E7 /* AxcViewSharkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CCF1EE2FAB500D992E7 /* AxcViewSharkVC.m */; };
@@ -392,6 +392,7 @@
 		EAAFBFEA1F0F687400881A62 /* delected_img.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAFBFE91F0F687400881A62 /* delected_img.png */; };
 		EAAFBFED1F0F6C7B00881A62 /* AxcButtonLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAFBFEC1F0F6C7B00881A62 /* AxcButtonLayoutVC.m */; };
 		EAD085761EEAE65F007DE2C4 /* AxcActivityHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD085751EEAE65F007DE2C4 /* AxcActivityHUDVC.m */; };
+		A1C7E4B51F09DE3800E0FAAA /* AxcTextHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */; };
 		EAD085801EEAE851007DE2C4 /* found_icons_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD085791EEAE851007DE2C4 /* found_icons_4.png */; };
 		EAD085811EEAE851007DE2C4 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAD0857A1EEAE851007DE2C4 /* placeholder.jpg */; };
 		EAD085B01EEAFFDC007DE2C4 /* HUD_0.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD085871EEAFFDC007DE2C4 /* HUD_0.png */; };
@@ -930,6 +931,8 @@
 		884C22CC280E935500FD4D39 /* XWHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWHUDManager.m; sourceTree = "<group>"; };
 		8895EC1E28B32C7F0068B53C /* AxcUIKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxcUIKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		8895EC1F28B32C7F0068B53C /* ChartsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTest.swift; sourceTree = "<group>"; };
+		A1C7E4A31F09DE3800E0FAAA /* AxcUI_TextHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcUI_TextHUD.h; sourceTree = "<group>"; };
+		A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcUI_TextHUD.m; sourceTree = "<group>"; };
 		BFA6BDAAF40C739C4824B43A /* Pods-AxcUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcUIKit/Pods-AxcUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		EA439CB51EE29E3100D992E7 /* AxcCellRearrangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCellRearrangeVC.h; sourceTree = "<group>"; };
 		EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCellRearrangeVC.m; sourceTree = "<group>"; };
@@ -1205,6 +1208,8 @@
 		EAAFBFEC1F0F6C7B00881A62 /* AxcButtonLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcButtonLayoutVC.m; sourceTree = "<group>"; };
 		EAD085741EEAE65F007DE2C4 /* AxcActivityHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcActivityHUDVC.h; sourceTree = "<group>"; };
 		EAD085751EEAE65F007DE2C4 /* AxcActivityHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcActivityHUDVC.m; sourceTree = "<group>"; };
+		A1C7E4B31F09DE3800E0FAAA /* AxcTextHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcTextHUDVC.h; sourceTree = "<group>"; };
+		A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcTextHUDVC.m; sourceTree = "<group>"; };
 		EAD085791EEAE851007DE2C4 /* found_icons_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = found_icons_4.png; sourceTree = "<group>"; };
 		EAD0857A1EEAE851007DE2C4 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		EAD085871EEAFFDC007DE2C4 /* HUD_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_0.png; sourceTree = "<group>"; };
@@ -1350,7 +1355,6 @@
 				048C0FA7211AFA7000E2F22F /* CoreMedia.framework in Frameworks */,
 				048C0FA5211AFA6000E2F22F /* CoreVideo.framework in Frameworks */,
 				048C0FA3211AFA3700E2F22F /* QuartzCore.framework in Frameworks */,
-				048C0F84211AF95B00E2F22F /* libzbar.a in Frameworks */,
 				7455322C51F8226B34F5E7AB /* libPods-AxcUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2473,6 +2477,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A1C7E4A21F09DE3800E0FAAA /* AxcUI_TextHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A1C7E4A31F09DE3800E0FAAA /* AxcUI_TextHUD.h */,
+				A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */,
+			);
+			path = AxcUI_TextHUD;
+			sourceTree = "<group>";
+		};
 		EA439CB41EE29E0100D992E7 /* SampleVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -2549,6 +2562,8 @@
 				EA5252C11EF523CB0016C687 /* AxcActivityIndicatorViewVC.m */,
 				EAD085741EEAE65F007DE2C4 /* AxcActivityHUDVC.h */,
 				EAD085751EEAE65F007DE2C4 /* AxcActivityHUDVC.m */,
+				A1C7E4B31F09DE3800E0FAAA /* AxcTextHUDVC.h */,
+				A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */,
 				EA439CEB1EE3D1CB00D992E7 /* AxcToastVC.h */,
 				EA439CEC1EE3D1CB00D992E7 /* AxcToastVC.m */,
 				EA439D0B1EE4417C00D992E7 /* AxcLabelVC.h */,
@@ -2963,6 +2978,7 @@
 				EA6A3BD41F0A4C4600E0FAAA /* AxcUI_NumberUnitField */,
 				EA6A3BCD1F0A20B400E0FAAA /* AxcUI_StarRatingView */,
 				EA6A3B421F09DE3800E0FAAA /* AxcUI_ActivityHUD */,
+				A1C7E4A21F09DE3800E0FAAA /* AxcUI_TextHUD */,
 				EA6A3B471F09DE3800E0FAAA /* AxcUI_ActivityIndicatorView */,
 				EA6A3B4C1F09DE3800E0FAAA /* AxcUI_BarrageScrollEngine */,
 				EA6A3B5F1F09DE3800E0FAAA /* AxcUI_BarrageView */,
@@ -3833,6 +3849,7 @@
 				0440DD76213932DD00C59A45 /* PopoverAction.m in Sources */,
 				EA439CED1EE3D1CB00D992E7 /* AxcToastVC.m in Sources */,
 				EAD085761EEAE65F007DE2C4 /* AxcActivityHUDVC.m in Sources */,
+				A1C7E4B51F09DE3800E0FAAA /* AxcTextHUDVC.m in Sources */,
 				0440DDA621393A9300C59A45 /* UIImageView+JWWebCache.m in Sources */,
 				EA5D50481F1C947B0002E9E9 /* AxcUI_BannerView.m in Sources */,
 				EA5252C21EF523CB0016C687 /* AxcActivityIndicatorViewVC.m in Sources */,
@@ -4029,6 +4046,7 @@
 				EA6A3B8E1F09DE3800E0FAAA /* Axc_ImageCache.m in Sources */,
 				0440DD5121392CBF00C59A45 /* TYCollectionViewVc.m in Sources */,
 				EA6A3BA41F09DE3800E0FAAA /* AxcUI_ActivityHUD.m in Sources */,
+				A1C7E4A51F09DE3800E0FAAA /* AxcUI_TextHUD.m in Sources */,
 				EA5D4ECE1F160B5E0002E9E9 /* AxcRectCornerVC.m in Sources */,
 				EA6A3BDA1F0A4D8000E0FAAA /* AxcNumberUnitFieldVC.m in Sources */,
 				0440DD4C21392CBF00C59A45 /* PreviewVc.m in Sources */,
@@ -4273,21 +4291,27 @@
 				INFOPLIST_FILE = AxcUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AxcUIKit/OtherLib/Barcode/Third/ZBarSDK",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AxcUIKit/OtherLib/Barcode/Third/ZBarSimSDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"Masonry\"",
+					"-l\"zbar\"",
 					"-framework",
 					"\"Foundation\"",
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AxcUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxcUIKit/AxcUIKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4317,20 +4341,26 @@
 				INFOPLIST_FILE = AxcUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AxcUIKit/OtherLib/Barcode/Third/ZBarSDK",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AxcUIKit/OtherLib/Barcode/Third/ZBarSimSDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"Masonry\"",
+					"-l\"zbar\"",
 					"-framework",
 					"\"Foundation\"",
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.AxcUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxcUIKit/AxcUIKit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
