@@ -76,13 +76,29 @@
     self.instructionsLabel.text = @"根据作者sunsx9316的项目JHDanmakuRender改制\n多弹幕情况下效率较高，占用内存以及CPU极少。\nAxcUI_BarrageView是根据此架构修改后的多元素展示控件";
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 布局完成后按最终安全区高度重定位底部控件，避免与底部参考标签重叠
+    CGFloat bottom = self.view.axcUI_safeHeight;
+    self.barrageTextFiled.axcUI_Y = bottom - 315;
+    self.switchSegmented.axcUI_Y = bottom - 275;
+    self.labelSpacingSlider.axcUI_Y = bottom - 240;
+    self.spacingSlider.axcUI_Y = bottom - 240;
+    self.fontEffectsSegmented.axcUI_Y = bottom - 200;
+    self.labelFontSlider.axcUI_Y = bottom - 160;
+    self.fontSlider.axcUI_Y = bottom - 160;
+    self.labelTextTimeSlider.axcUI_Y = bottom - 130;
+    self.timeSlider.axcUI_Y = bottom - 130;
+}
+
 // 发射弹幕
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.barrageTextFiled resignFirstResponder]; // 解除第一响应者
     AxcUI_BarrageModelBase *sc;                 // 声明父类弹幕
     NSString *str = self.barrageTextFiled.text; // 准备弹幕文字
     if (!str || [str isEqualToString:@""]) {
-        str = self.barrageTextFiled.axcUI_PlaceholderLabel.text;
+        // 使用公开API获取占位文字，避免访问私有 _placeholderLabel 在新系统上崩溃
+        str = self.barrageTextFiled.placeholder;
     }
     if (_barrageStyle == 0) {   // 创建滚动弹幕模组
         sc = [[AxcUI_BarrageScrollModel alloc] initWithFontSize:13
@@ -206,7 +222,7 @@
 
 - (UITextField *)barrageTextFiled{
     if (!_barrageTextFiled) {
-        _barrageTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(10, SCREEN_HEIGHT - 315,
+        _barrageTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(10, self.view.axcUI_safeHeight - 315,
                                                                           self.view.axcUI_Width - 20, 30)];
         _barrageTextFiled.placeholder = @"在这里输入你想发的弹幕内容，点击屏幕发送";
         _barrageTextFiled.font = [UIFont systemFontOfSize:14];
@@ -239,7 +255,7 @@
         _switchSegmented = [[UISegmentedControl alloc] initWithItems:@[@"开始",
                                                                        @"暂停",
                                                                        @"停止"]];
-        _switchSegmented.frame = CGRectMake(10, SCREEN_HEIGHT - 275,
+        _switchSegmented.frame = CGRectMake(10, self.view.axcUI_safeHeight - 275,
                                                  self.view.axcUI_Width - 20, 30);
         _switchSegmented.selectedSegmentIndex = 0;
         [_switchSegmented addTarget:self action:@selector(click_switchSegmented)
@@ -250,7 +266,7 @@
 
 - (UILabel *)labelSpacingSlider{
     if (!_labelSpacingSlider) {
-        _labelSpacingSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,SCREEN_HEIGHT - 240, 120, 30)];
+        _labelSpacingSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,self.view.axcUI_safeHeight - 240, 120, 30)];
         _labelSpacingSlider.font = [UIFont systemFontOfSize:14];
         _labelSpacingSlider.textColor = [UIColor AxcUI_OrangeColor];
         _labelSpacingSlider.textAlignment = NSTextAlignmentLeft;
@@ -260,7 +276,7 @@
 }
 - (UISlider *)spacingSlider{
     if (!_spacingSlider) {
-        _spacingSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,SCREEN_HEIGHT - 240, self.view.axcUI_Width - 130, 30)];
+        _spacingSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,self.view.axcUI_safeHeight - 240, self.view.axcUI_Width - 130, 30)];
         [_spacingSlider addTarget:self action:@selector(click_spacingSlider) forControlEvents:UIControlEventValueChanged];
         _spacingSlider.minimumValue = 0;
         _spacingSlider.maximumValue = 100;
@@ -274,7 +290,7 @@
                                                                             @"描边",
                                                                             @"投影",
                                                                             @"模糊阴影"]];
-        _fontEffectsSegmented.frame = CGRectMake(10, SCREEN_HEIGHT - 200,
+        _fontEffectsSegmented.frame = CGRectMake(10, self.view.axcUI_safeHeight - 200,
                                                      self.view.axcUI_Width - 20, 30);
         _fontEffectsSegmented.selectedSegmentIndex = 0;
         [_fontEffectsSegmented addTarget:self action:@selector(click_fontEffectsSegmented)
@@ -285,7 +301,7 @@
 
 - (UILabel *)labelFontSlider{
     if (!_labelFontSlider) {
-        _labelFontSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,SCREEN_HEIGHT - 160, 120, 30)];
+        _labelFontSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,self.view.axcUI_safeHeight - 160, 120, 30)];
         _labelFontSlider.font = [UIFont systemFontOfSize:14];
         _labelFontSlider.textColor = [UIColor AxcUI_OrangeColor];
         _labelFontSlider.textAlignment = NSTextAlignmentLeft;
@@ -295,7 +311,7 @@
 }
 - (UISlider *)fontSlider{
     if (!_fontSlider) {
-        _fontSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,SCREEN_HEIGHT - 160, self.view.axcUI_Width - 130, 30)];
+        _fontSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,self.view.axcUI_safeHeight - 160, self.view.axcUI_Width - 130, 30)];
         [_fontSlider addTarget:self action:@selector(click_refreshFont) forControlEvents:UIControlEventValueChanged];
         _fontSlider.minimumValue = 10;
         _fontSlider.maximumValue = 20;
@@ -306,7 +322,7 @@
 
 - (UILabel *)labelTextTimeSlider{
     if (!_labelTextTimeSlider) {
-        _labelTextTimeSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,SCREEN_HEIGHT - 130, 120, 30)];
+        _labelTextTimeSlider = [[UILabel alloc] initWithFrame:CGRectMake(5,self.view.axcUI_safeHeight - 130, 120, 30)];
         _labelTextTimeSlider.font = [UIFont systemFontOfSize:14];
         _labelTextTimeSlider.textColor = [UIColor AxcUI_OrangeColor];
         _labelTextTimeSlider.textAlignment = NSTextAlignmentLeft;
@@ -316,7 +332,7 @@
 }
 - (UISlider *)timeSlider{
     if (!_timeSlider) {
-        _timeSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,SCREEN_HEIGHT - 130, self.view.axcUI_Width - 130, 30)];
+        _timeSlider = [[UISlider alloc] initWithFrame:CGRectMake(110,self.view.axcUI_safeHeight - 130, self.view.axcUI_Width - 130, 30)];
         [_timeSlider addTarget:self action:@selector(click_refreshTime) forControlEvents:UIControlEventValueChanged];
         _timeSlider.minimumValue = 0;
         _timeSlider.maximumValue = 5;

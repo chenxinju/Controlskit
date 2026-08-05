@@ -26,7 +26,12 @@ static NSString * const ksystemPlaceholderLabel = @"_placeholderLabel";
 
 
 - (UILabel *)axcUI_PlaceholderLabel{
-    return (UILabel *)[self valueForKeyPath:ksystemPlaceholderLabel];
+    // 私有 _placeholderLabel 在新系统上可能不可用，加保护避免KVC抛异常闪退
+    @try {
+        return (UILabel *)[self valueForKeyPath:ksystemPlaceholderLabel];
+    } @catch (NSException *exception) {
+        return nil;
+    }
 }
 
 
