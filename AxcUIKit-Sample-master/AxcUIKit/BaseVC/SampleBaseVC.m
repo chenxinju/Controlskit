@@ -125,8 +125,7 @@
 
 - (UILabel *)instructionsLabel{
     if (!_instructionsLabel) {
-        _instructionsLabel = [[AxcUI_Label alloc] initWithFrame:CGRectMake(0, self.view.axcUI_Height - self.instructionsLabelHeight,
-                                                                       self.view.axcUI_Width, self.instructionsLabelHeight)];
+        _instructionsLabel = [[AxcUI_Label alloc] init];
         _instructionsLabel.font = [UIFont systemFontOfSize:15];
         _instructionsLabel.textAlignment = NSTextAlignmentCenter;
         _instructionsLabel.textColor = [UIColor AxcUI_AmethystColor];
@@ -134,8 +133,15 @@
         _instructionsLabel.alpha = 0.8;
         _instructionsLabel.numberOfLines = 0;
         _instructionsLabel.axcUI_textEdgeInsets = UIEdgeInsetsMake(0,10,0,10);
-        [_instructionsLabel AxcUI_autoresizingMaskLeftAndRight]; // 调用比例适配
+        _instructionsLabel.translatesAutoresizingMaskIntoConstraints = NO;
         [self.view addSubview:_instructionsLabel];
+        // 用约束固定到底部安全区，避免导航栏调整/视图frame时序问题导致被挤出屏幕
+        [NSLayoutConstraint activateConstraints:@[
+            [_instructionsLabel.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor],
+            [_instructionsLabel.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor],
+            [_instructionsLabel.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
+            [_instructionsLabel.heightAnchor constraintEqualToConstant:self.instructionsLabelHeight]
+        ]];
     }
     return _instructionsLabel;
 }
