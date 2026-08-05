@@ -78,6 +78,21 @@ UICollectionViewDelegateFlowLayout
     self.instructionsLabel.text = @"这里可以把这个HUD看成一个View设置相关View属性，也可以添加其他控件。\n不设置即为默认\n在此感谢作者Vinh Nguyen和Cokile Cioi提供的使用许可";
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 布局完成后按最终安全区高度重定位底部控件，避免与底部参考标签重叠
+    CGFloat bottom = self.view.axcUI_safeHeight;
+    self.onlyActiveViewSwitchLabel.axcUI_Y = bottom - 380;
+    self.onlyActiveViewSwitch.axcUI_Y = bottom - 350;
+    self.dismissSwitchLabel.axcUI_Y = bottom - 380;
+    self.dismissSwitch.axcUI_Y = bottom - 350;
+    self.showTextButton.axcUI_Y = bottom - 310;
+    self.showGIFButton.axcUI_Y = bottom - 310;
+    self.dismissButton.axcUI_Y = bottom - 130;
+    self.dismissTextButton.axcUI_Y = bottom - 130;
+    self.collectionView.axcUI_Y = bottom - 280;
+}
+
 #pragma mark - 添加
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     [self.axcActivityHUD AxcUI_dismissWithSuccess:self.dismissSwitch.on]; // 先销毁之前的
@@ -176,7 +191,7 @@ UICollectionViewDelegateFlowLayout
 - (UILabel *)onlyActiveViewSwitchLabel{
     if (!_onlyActiveViewSwitchLabel) {
         _onlyActiveViewSwitchLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.axcUI_Width - 190,
-                                                                               self.view.axcUI_Height - 380 ,
+                                                                               self.view.axcUI_safeHeight - 380 ,
                                                                         180, 30)];
         _onlyActiveViewSwitchLabel.font = [UIFont systemFontOfSize:14];
         _onlyActiveViewSwitchLabel.textColor = [UIColor AxcUI_OrangeColor];
@@ -188,14 +203,14 @@ UICollectionViewDelegateFlowLayout
 - (UISwitch *)onlyActiveViewSwitch{
     if (!_onlyActiveViewSwitch) {
         _onlyActiveViewSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(self.view.axcUI_Width - 60,
-                                                                           self.view.axcUI_Height - 350, 50, 30)];
+                                                                           self.view.axcUI_safeHeight - 350, 50, 30)];
         _onlyActiveViewSwitch.on = NO;
     }
     return _onlyActiveViewSwitch;
 }
 - (UILabel *)dismissSwitchLabel{
     if (!_dismissSwitchLabel) {
-        _dismissSwitchLabel = [[UILabel alloc] initWithFrame:CGRectMake(10,self.view.axcUI_Height - 380 ,
+        _dismissSwitchLabel = [[UILabel alloc] initWithFrame:CGRectMake(10,self.view.axcUI_safeHeight - 380 ,
                                                                              150, 30)];
         _dismissSwitchLabel.font = [UIFont systemFontOfSize:14];
         _dismissSwitchLabel.textColor = [UIColor AxcUI_OrangeColor];
@@ -206,7 +221,7 @@ UICollectionViewDelegateFlowLayout
 
 - (UISwitch *)dismissSwitch{
     if (!_dismissSwitch) {
-        _dismissSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(10,self.view.axcUI_Height - 350, 50, 30)];
+        _dismissSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(10,self.view.axcUI_safeHeight - 350, 50, 30)];
         _dismissSwitch.on = YES;
     }
     return _dismissSwitch;
@@ -215,7 +230,7 @@ UICollectionViewDelegateFlowLayout
 - (UIButton *)showTextButton{
     if (!_showTextButton) {
         _showTextButton = [[UIButton alloc] initWithFrame:CGRectMake(10,
-                                                                    self.view.axcUI_Height - 310, 162, 30)];
+                                                                    self.view.axcUI_safeHeight - 310, 162, 30)];
         [_showTextButton addTarget:self action:@selector(click_showTextButton)
                  forControlEvents:UIControlEventTouchUpInside];
         [_showTextButton setTitle:@"展示纯文字加载" forState:UIControlStateNormal];
@@ -229,7 +244,7 @@ UICollectionViewDelegateFlowLayout
 - (UIButton *)showGIFButton{
     if (!_showGIFButton) {
         _showGIFButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.axcUI_Width - 172,
-                                                                    self.view.axcUI_Height - 310, 162, 30)];
+                                                                    self.view.axcUI_safeHeight - 310, 162, 30)];
         [_showGIFButton addTarget:self action:@selector(click_showGIFButton)
                  forControlEvents:UIControlEventTouchUpInside];
         [_showGIFButton setTitle:@"展示GIF图加载" forState:UIControlStateNormal];
@@ -317,7 +332,7 @@ UICollectionViewDelegateFlowLayout
 - (UIButton *)dismissButton{
     if (!_dismissButton) {
         _dismissButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.axcUI_Width - 172,
-                                                                    self.view.axcUI_Height - 130, 162, 30)];
+                                                                    self.view.axcUI_safeHeight - 130, 162, 30)];
         [_dismissButton addTarget:self action:@selector(click_dismissButton)
                      forControlEvents:UIControlEventTouchUpInside];
         [_dismissButton setTitle:@"默认dismiss" forState:UIControlStateNormal];
@@ -331,7 +346,7 @@ UICollectionViewDelegateFlowLayout
 
 - (UIButton *)dismissTextButton{
     if (!_dismissTextButton) {
-        _dismissTextButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.axcUI_Height - 130, 162, 30)];
+        _dismissTextButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.axcUI_safeHeight - 130, 162, 30)];
         [_dismissTextButton addTarget:self action:@selector(click_dismissTextButton)
                  forControlEvents:UIControlEventTouchUpInside];
         [_dismissTextButton setTitle:@"文字提示方式dismiss" forState:UIControlStateNormal];
@@ -347,7 +362,7 @@ UICollectionViewDelegateFlowLayout
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_Height - 280,
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_safeHeight - 280,
                                                                              self.view.axcUI_Width, 150)
                                              collectionViewLayout:layout];
         _collectionView.bounces = NO;

@@ -187,7 +187,7 @@
 - (UIView *)targetBox {
     if (!_targetBox) {
         _targetBox = [[UIView alloc] initWithFrame:CGRectMake(20,
-                                                              self.view.bounds.size.height - 100 - 140,
+                                                              self.view.axcUI_safeHeight - 240,
                                                               self.view.bounds.size.width - 40,
                                                               120)];
         _targetBox.backgroundColor = [UIColor colorWithRed:1.0 green:0.94 blue:0.72 alpha:1.0];

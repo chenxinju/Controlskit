@@ -44,6 +44,15 @@
     self.instructionsLabel.text = @"上方分栏控制器可控制加载指示器风格，与扩展类添加进度指示器演示相同。\n具体设置参数请参照‘AxcUI_PhotoBrowser.h’\nProgress相关扩展也在其中，与类方法相同的设置即可使用";
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 布局完成后按最终安全区高度重定位底部控件，避免与底部参考标签重叠
+    CGFloat bottom = self.view.axcUI_safeHeight;
+    self.clearCacheButton.axcUI_Y = bottom - 160;
+    self.segmentedLabel.axcUI_Y = bottom - 260;
+    self.progressSegmented.axcUI_Y = bottom - 220;
+}
+
 #pragma mark - 业务逻辑
 - (void)AxcUI_photoBrowser:(AxcUI_PhotoBrowser *)browser
               saveTypeMode:(AxcPhotoBrowserSaveStyle)saveTypeMode
@@ -131,7 +140,7 @@
 }
 - (UIButton *)clearCacheButton{
     if (!_clearCacheButton) {
-        _clearCacheButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.axcUI_Height - 160,
+        _clearCacheButton = [[UIButton alloc] initWithFrame:CGRectMake(10, self.view.axcUI_safeHeight - 160,
                                                                        self.view.axcUI_Width - 20, 40)];
         [_clearCacheButton addTarget:self action:@selector(click_clearCacheButton) forControlEvents:UIControlEventTouchUpInside];
         [_clearCacheButton setTitle:@"释放图片遗留缓存" forState:UIControlStateNormal];
@@ -143,7 +152,7 @@
 }
 - (UILabel *)segmentedLabel{
     if (!_segmentedLabel) {
-        _segmentedLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.view.axcUI_Height - 260,
+        _segmentedLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.view.axcUI_safeHeight - 260,
                                                                     self.view.axcUI_Width - 20, 30)];
         _segmentedLabel.font = [UIFont systemFontOfSize:14];
         _segmentedLabel.textColor = [UIColor AxcUI_OrangeColor];
@@ -160,7 +169,7 @@
                                                                        @"填充球体",
                                                                        @"加载模式",
                                                                        @"同心循环"]];
-        _progressSegmented.frame = CGRectMake(10, self.view.axcUI_Height - 220,
+        _progressSegmented.frame = CGRectMake(10, self.view.axcUI_safeHeight - 220,
                                                 self.view.axcUI_Width - 20, 30);
         _progressSegmented.selectedSegmentIndex = 0;
     }

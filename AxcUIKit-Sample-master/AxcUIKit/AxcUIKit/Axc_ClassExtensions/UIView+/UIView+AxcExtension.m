@@ -53,6 +53,16 @@
     return self.frame.size.height;
 }
 
+- (CGFloat)axcUI_safeHeight
+{
+    // 用window的安全区底部 inset，viewDidLoad阶段也可靠
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    if (!window) {
+        window = [[UIApplication sharedApplication].windows lastObject];
+    }
+    return self.frame.size.height - window.safeAreaInsets.bottom;
+}
+
 - (CGFloat)axcUI_Width
 {
     return self.frame.size.width;

@@ -54,6 +54,12 @@ UICollectionViewDelegateFlowLayout
     // 相关函数此扩展中：UIImage+AxcSpecialEffectsDrawing.h
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 布局完成后按最终安全区高度重定位底部控件，避免与底部参考标签重叠
+    self.collectionView.axcUI_Y = self.view.axcUI_safeHeight - 280;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     self.MainImageView.image = self.originalImage.copy;             // 恢复成原图
     if (indexPath.row != 0) { // 如果选择的不是原图
@@ -169,7 +175,7 @@ UICollectionViewDelegateFlowLayout
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_Height - 280,
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_safeHeight - 280,
                                                                              self.view.axcUI_Width, 150)
                                              collectionViewLayout:layout];
         _collectionView.bounces = NO;

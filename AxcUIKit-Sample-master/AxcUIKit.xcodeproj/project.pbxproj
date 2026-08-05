@@ -244,6 +244,7 @@
 		884C22CD280E935500FD4D39 /* XWHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C22CC280E935500FD4D39 /* XWHUDManager.m */; };
 		8895EC2028B32C7F0068B53C /* ChartsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EC1F28B32C7F0068B53C /* ChartsTest.swift */; };
 		A1C7E4A51F09DE3800E0FAAA /* AxcUI_TextHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */; };
+		A1C7E4B51F09DE3800E0FAAA /* AxcTextHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */; };
 		EA439CB71EE29E3100D992E7 /* AxcCellRearrangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */; };
 		EA439CC41EE2DE8400D992E7 /* TestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CC31EE2DE8400D992E7 /* TestTwoVC.m */; };
 		EA439CD11EE2FAB500D992E7 /* AxcViewSharkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CCF1EE2FAB500D992E7 /* AxcViewSharkVC.m */; };
@@ -392,7 +393,6 @@
 		EAAFBFEA1F0F687400881A62 /* delected_img.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAFBFE91F0F687400881A62 /* delected_img.png */; };
 		EAAFBFED1F0F6C7B00881A62 /* AxcButtonLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAFBFEC1F0F6C7B00881A62 /* AxcButtonLayoutVC.m */; };
 		EAD085761EEAE65F007DE2C4 /* AxcActivityHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD085751EEAE65F007DE2C4 /* AxcActivityHUDVC.m */; };
-		A1C7E4B51F09DE3800E0FAAA /* AxcTextHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */; };
 		EAD085801EEAE851007DE2C4 /* found_icons_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD085791EEAE851007DE2C4 /* found_icons_4.png */; };
 		EAD085811EEAE851007DE2C4 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAD0857A1EEAE851007DE2C4 /* placeholder.jpg */; };
 		EAD085B01EEAFFDC007DE2C4 /* HUD_0.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD085871EEAFFDC007DE2C4 /* HUD_0.png */; };
@@ -933,6 +933,8 @@
 		8895EC1F28B32C7F0068B53C /* ChartsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTest.swift; sourceTree = "<group>"; };
 		A1C7E4A31F09DE3800E0FAAA /* AxcUI_TextHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcUI_TextHUD.h; sourceTree = "<group>"; };
 		A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcUI_TextHUD.m; sourceTree = "<group>"; };
+		A1C7E4B31F09DE3800E0FAAA /* AxcTextHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcTextHUDVC.h; sourceTree = "<group>"; };
+		A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcTextHUDVC.m; sourceTree = "<group>"; };
 		BFA6BDAAF40C739C4824B43A /* Pods-AxcUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcUIKit/Pods-AxcUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		EA439CB51EE29E3100D992E7 /* AxcCellRearrangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCellRearrangeVC.h; sourceTree = "<group>"; };
 		EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCellRearrangeVC.m; sourceTree = "<group>"; };
@@ -1208,8 +1210,6 @@
 		EAAFBFEC1F0F6C7B00881A62 /* AxcButtonLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcButtonLayoutVC.m; sourceTree = "<group>"; };
 		EAD085741EEAE65F007DE2C4 /* AxcActivityHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcActivityHUDVC.h; sourceTree = "<group>"; };
 		EAD085751EEAE65F007DE2C4 /* AxcActivityHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcActivityHUDVC.m; sourceTree = "<group>"; };
-		A1C7E4B31F09DE3800E0FAAA /* AxcTextHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcTextHUDVC.h; sourceTree = "<group>"; };
-		A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcTextHUDVC.m; sourceTree = "<group>"; };
 		EAD085791EEAE851007DE2C4 /* found_icons_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = found_icons_4.png; sourceTree = "<group>"; };
 		EAD0857A1EEAE851007DE2C4 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		EAD085871EEAFFDC007DE2C4 /* HUD_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_0.png; sourceTree = "<group>"; };
@@ -4311,7 +4311,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKitT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxcUIKit/AxcUIKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -4360,7 +4360,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QxcUIKitT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AxcUIKit/AxcUIKit-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

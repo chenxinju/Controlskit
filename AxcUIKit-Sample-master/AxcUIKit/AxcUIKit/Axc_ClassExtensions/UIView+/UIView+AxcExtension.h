@@ -30,6 +30,11 @@
 @property (nonatomic, assign) CGFloat axcUI_Height;
 
 /**
+ *  4.1 安全区高度（视图高度减去底部安全区/Home指示条后的可用高度）
+ */
+@property (nonatomic, assign, readonly) CGFloat axcUI_safeHeight;
+
+/**
  *  5.中心点X值
  */
 @property (nonatomic, assign) CGFloat axcUI_CenterX;

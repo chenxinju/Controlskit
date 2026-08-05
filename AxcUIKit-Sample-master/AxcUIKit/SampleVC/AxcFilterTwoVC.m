@@ -51,7 +51,13 @@ UICollectionViewDelegateFlowLayout
     }];
 
     self.instructionsLabel.text = @"以下为预设的【颜色矩阵】滤镜渲染，效率一般，如果有多组图片需要渲染需要做分线程和缓存处理\n可自定义颜色矩阵使用相关函数调用渲染";
-    
+
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    // 布局完成后按最终安全区高度重定位底部控件，避免与底部参考标签重叠
+    self.collectionView.axcUI_Y = self.view.axcUI_safeHeight - 280;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -179,7 +185,7 @@ UICollectionViewDelegateFlowLayout
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_Height - 280,
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.view.axcUI_safeHeight - 280,
                                                                              self.view.axcUI_Width, 150)
                                              collectionViewLayout:layout];
         _collectionView.bounces = NO;
