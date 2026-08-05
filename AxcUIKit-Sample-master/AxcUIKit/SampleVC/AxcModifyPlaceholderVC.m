@@ -29,19 +29,19 @@
     [self.view addSubview:self.ModifyOneBtn];
     [self.view addSubview:self.ModifyTwoBtn];
     
-    self.instructionsLabel.text = @"将PlaceholderLabel通过KVC取出，然后使用Runtime赋予新的属性，以后可以动态灵活方便的设置Placeholder了";
+    self.instructionsLabel.text = @"通过公开API attributedPlaceholder 设置占位文字的颜色/字体/对齐方式，无先后顺序，设置即可动态调整";
 }
 
 
 #pragma mark- 业务逻辑
 // KVC获取内部对象调取至外部接口设置，无先后顺序，设置即可动态调整  ************************************************
 - (void)click_ModifyOneBtn{
-    self.textField.axcUI_PlaceholderLabel.text = _ModifyOneBtn.titleLabel.text;
+    self.textField.axcUI_placeholder = _ModifyOneBtn.titleLabel.text;
 }
 
 - (void)click_ModifyTwoBtn{
-    self.textField.axcUI_PlaceholderLabel.text = @"我是修改后的占位符";
-    self.textField.axcUI_PlaceholderLabel.textColor = [UIColor AxcUI_ArcColor];
+    self.textField.axcUI_placeholder = @"我是修改后的占位符";
+    self.textField.axcUI_placeholderColor = [UIColor AxcUI_ArcColor];
 }
 
 
@@ -88,10 +88,10 @@
         _textField.placeholder = @"我是占位符"; // 系统设置占位符
 
         // KVC参数修改，无先后顺序，设置即可动态调整 ************************************************
-        _textField.axcUI_PlaceholderLabel.text = @"我是修改后的占位符"; // 扩展修改
-        _textField.axcUI_PlaceholderLabel.textColor = [UIColor AxcUI_MidNightColor];   // 修改占位符颜色
-        _textField.axcUI_PlaceholderLabel.font = [UIFont systemFontOfSize:14];
-        _textField.axcUI_PlaceholderLabel.textAlignment = NSTextAlignmentCenter;    // 修改占位符对齐方式
+        _textField.axcUI_placeholder = @"我是修改后的占位符"; // 扩展修改
+        _textField.axcUI_placeholderColor = [UIColor AxcUI_MidNightColor];   // 修改占位符颜色
+        _textField.axcUI_placeholderFont = [UIFont systemFontOfSize:14];
+        _textField.axcUI_placeholderTextAlignment = NSTextAlignmentCenter;    // 修改占位符对齐方式
     }
     return _textField;
 }
