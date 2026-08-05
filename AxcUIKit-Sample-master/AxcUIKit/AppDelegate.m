@@ -10,6 +10,7 @@
 #import "JWLaunchAd.h"    //启动广告
 #import "MZGuidePages.h" //引导页
 #import "ViewController.h"
+#import "SampleBaseVC.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     
     ViewController *view = [[ViewController alloc]init];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:view];
+    AxcNavigationController *nav = [[AxcNavigationController alloc] initWithRootViewController:view];
     
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;

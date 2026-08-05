@@ -46,5 +46,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface AxcNavigationController : UINavigationController
++ (void)axc_applyDefaultAppearanceToNavigationBar:(UINavigationBar *)navigationBar;
+@end
+
+@interface AxcNavigationTitleView : UIView
++ (instancetype)viewWithTitle:(NSString *)title subtitle:(NSString *)subtitle;
+@end
+
 /** 宏指针定义下文 */
 NS_ASSUME_NONNULL_END

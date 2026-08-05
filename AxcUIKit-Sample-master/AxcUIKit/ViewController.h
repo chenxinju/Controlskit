@@ -13,3 +13,9 @@
 
 @end
 
+
+@interface qcSdksampleSectionHearView : UITableViewHeaderFooterView
+
+- (void)configureWithTitle:(NSString *)title;
+
+@end

@@ -1905,11 +1905,11 @@
 			isa = PBXGroup;
 			children = (
 				04C371472166EBBE0083A7FE /* bank.plist */,
-				04C371482166EBBE0083A7FE /* NSString+Extension.h */,
 				04C371492166EBBE0083A7FE /* EmojiFile */,
-				04C3714A2166EBBE0083A7FE /* NSString+Emoji.m */,
-				04C3714B2166EBBE0083A7FE /* NSString+Extension.m */,
 				04C3714C2166EBBE0083A7FE /* NSString+Emoji.h */,
+				04C3714A2166EBBE0083A7FE /* NSString+Emoji.m */,
+				04C371482166EBBE0083A7FE /* NSString+Extension.h */,
+				04C3714B2166EBBE0083A7FE /* NSString+Extension.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -3504,7 +3504,7 @@
 				TargetAttributes = {
 					093C62221EA6F85800ADAC42 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3T375P6TJT;
+						DevelopmentTeam = LK5JAB3RQN;
 						LastSwiftMigration = 1330;
 						ProvisioningStyle = Automatic;
 					};
@@ -4260,7 +4260,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 3T375P6TJT;
+				DEVELOPMENT_TEAM = LK5JAB3RQN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4304,7 +4304,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 3T375P6TJT;
+				DEVELOPMENT_TEAM = LK5JAB3RQN;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

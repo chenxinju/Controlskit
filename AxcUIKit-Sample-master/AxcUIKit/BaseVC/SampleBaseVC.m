@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.instructionsLabelHeight = 100;
     
@@ -146,6 +147,91 @@
     // 框架在使用后能完全从内存中销毁才是最好的优化
     // 不明白ARC和内存泄漏的请自行谷歌，此示例已加入内存检测功能，如果有内存泄漏会alent进行提示
     NSLog(@"控制器%s调用情况，已销毁%@",__func__,self);
+}
+
+@end
+
+#pragma mark - AxcNavigationController
+
+@implementation AxcNavigationController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [AxcNavigationController axc_applyDefaultAppearanceToNavigationBar:self.navigationBar];
+    self.interactivePopGestureRecognizer.enabled = YES;
+}
+
++ (void)axc_applyDefaultAppearanceToNavigationBar:(UINavigationBar *)navigationBar {
+    navigationBar.translucent = NO;
+    navigationBar.barTintColor = [UIColor whiteColor];
+    navigationBar.tintColor = [UIColor blackColor];
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = [UIColor whiteColor];
+        appearance.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
+        appearance.shadowColor = [UIColor colorWithWhite:0.85 alpha:1.0];
+        navigationBar.standardAppearance = appearance;
+        navigationBar.scrollEdgeAppearance = appearance;
+        navigationBar.compactAppearance = appearance;
+    }
+}
+
+@end
+
+#pragma mark - AxcNavigationTitleView
+
+@interface AxcNavigationTitleView ()
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel *subtitleLabel;
+@end
+
+@implementation AxcNavigationTitleView
+
++ (instancetype)viewWithTitle:(NSString *)title subtitle:(NSString *)subtitle {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width - 120.0;
+    AxcNavigationTitleView *titleView = [[AxcNavigationTitleView alloc] initWithFrame:CGRectMake(0, 0, width, 44.0)];
+    titleView.titleLabel.text = title;
+    titleView.subtitleLabel.text = subtitle;
+    [titleView setNeedsLayout];
+    return titleView;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:17.0];
+        _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        [self addSubview:_titleLabel];
+
+        _subtitleLabel = [[UILabel alloc] init];
+        _subtitleLabel.font = [UIFont systemFontOfSize:11.0];
+        _subtitleLabel.textColor = [UIColor darkGrayColor];
+        _subtitleLabel.textAlignment = NSTextAlignmentCenter;
+        _subtitleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
+        [self addSubview:_subtitleLabel];
+    }
+    return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    if (self.subtitleLabel.text.length > 0) {
+        self.titleLabel.frame = CGRectMake(0, 2.0, self.bounds.size.width, 20.0);
+        self.subtitleLabel.frame = CGRectMake(0, 22.0, self.bounds.size.width, 16.0);
+        self.subtitleLabel.hidden = NO;
+    } else {
+        self.titleLabel.frame = self.bounds;
+        self.subtitleLabel.hidden = YES;
+    }
+}
+
+- (CGSize)intrinsicContentSize {
+    return CGSizeMake(UIViewNoIntrinsicMetric, 44.0);
 }
 
 @end

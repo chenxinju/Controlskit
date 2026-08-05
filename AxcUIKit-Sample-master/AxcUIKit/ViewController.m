@@ -12,6 +12,7 @@
 #import "SampleBaseVC.h"
 
 #import "PYSearch.h" // 导入搜索成品控件(稍微经过AxcUIKit美化了下)
+#import <Masonry.h>
 
 #define NO_SearchEesults @"没有搜索结果哟~"
 
@@ -33,10 +34,12 @@ UITableViewDelegate
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     [self.view addSubview:self.tableView];
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO; // 禁用 iOS7 返回手势
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
                                                                                          target:self
                                                                                          action:@selector(clickRightSearchBtn)];
@@ -141,11 +144,12 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
     NSDictionary *dic = Arr[indexPath.row];
     NSString *VC_Name = dic[@"VCName"];
     Class class = NSClassFromString(VC_Name);
-    SampleBaseVC *viewController = [[class alloc]init];
-    Arr = self.dataArray[indexPath.section];
-    dic = Arr[indexPath.row];
+    UIViewController *viewController = [[class alloc] init];
     viewController.title = dic[@"describeName"];
-    viewController.navigationItem.prompt = [NSString stringWithFormat:@"示例文件名称: %@",dic[@"VCName"]];
+    viewController.edgesForExtendedLayout = UIRectEdgeNone;
+    viewController.navigationItem.prompt = nil;
+    viewController.navigationItem.titleView = [AxcNavigationTitleView viewWithTitle:dic[@"describeName"]
+                                                                           subtitle:[NSString stringWithFormat:@"示例文件名称: %@", VC_Name]];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
@@ -180,14 +184,14 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self AxcUI_PushSampleVC_WithIndexPath:indexPath];
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return self.sectionTitleArray[section];
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    qcSdksampleSectionHearView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:NSStringFromClass([qcSdksampleSectionHearView class])];
+    [header configureWithTitle:self.sectionTitleArray[section]];
+    return header;
 }
--(void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section{
-    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
-    header.textLabel.textAlignment = NSTextAlignmentCenter;
-    header.textLabel.textColor = [UIColor AxcUI_ConcreteColor];
-    header.textLabel.font = [UIFont systemFontOfSize:14];
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30;
 }
 
 
@@ -318,9 +322,14 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.frame];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        if (@available(iOS 15.0, *)) {
+            _tableView.sectionHeaderTopPadding = 0;
+        }
+        [_tableView registerClass:[qcSdksampleSectionHearView class]
+forHeaderFooterViewReuseIdentifier:NSStringFromClass([qcSdksampleSectionHearView class])];
     }
     return _tableView;
 }
@@ -348,10 +357,50 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
 }
 
 - (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     self.title = @"AxcUIKit Sample";
 }
 - (void)viewWillDisappear:(BOOL)animated{
     self.title = @"";
+}
+
+@end
+
+
+@interface qcSdksampleSectionHearView ()
+
+@property (nonatomic, strong) UILabel *titleLabel;
+
+@end
+
+@implementation qcSdksampleSectionHearView
+
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithReuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.contentView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [self.contentView addSubview:self.titleLabel];
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(16);
+            make.right.mas_equalTo(-16);
+            make.centerY.mas_equalTo(self.contentView);
+        }];
+    }
+    return self;
+}
+
+- (void)configureWithTitle:(NSString *)title {
+    self.titleLabel.text = title;
+}
+
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.textAlignment = NSTextAlignmentLeft;
+        _titleLabel.textColor = [UIColor AxcUI_ConcreteColor];
+        _titleLabel.font = [UIFont systemFontOfSize:14];
+    }
+    return _titleLabel;
 }
 
 @end

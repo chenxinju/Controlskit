@@ -10,7 +10,7 @@
 
 @protocol AxcVCBackButtonEventProtocol <NSObject>
 @optional
-// 实现这个协议在VC类来处理“返回”按钮点击
+// 页面即将被 pop 时触发，用于释放资源；不再拦截系统返回动画
 - (BOOL)AxcUI_navigationShouldPopOnBackButton;
 @end
 
