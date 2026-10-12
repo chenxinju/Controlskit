@@ -284,6 +284,11 @@ didSelectSearchHistoryAtIndex:(NSInteger)index
         [Group3 addObject:@{@"controlsName":@"系统权限访问",@"describeName":@"主动请求各种系统权限",@"VCName":@"PrivacyPermissionViewVC"}];
         
          [Group3 addObject:@{@"controlsName":@"日历选择",@"describeName":@"弹框选择日期",@"VCName":@"CalendarPickerViewController"}];
+
+        [Group3 addObject:@{@"controlsName":@"KMCornerShadow",@"describeName":@"圆角阴影（独立阴影层）",@"VCName":@"KMCornerShadowViewController"}];
+        [Group3 addObject:@{@"controlsName":@"YCShadowView",@"describeName":@"圆角阴影视图",@"VCName":@"YCShadowViewController"}];
+        [Group3 addObject:@{@"controlsName":@"ZYCornerRadius",@"describeName":@"UIImageView高效圆角",@"VCName":@"ZYCornerRadiusViewController"}];
+        [Group3 addObject:@{@"controlsName":@"UIView通用圆角",@"describeName":@"CAShapeLayer/layer圆角（任意控件）",@"VCName":@"UIViewCornerDemoViewController"}];
         
         NSMutableArray *Group4 = [NSMutableArray array];
         [Group4 addObject:@{@"controlsName":@"图片",@"describeName":@"图片添加水印",@"VCName":@"PictureWatermarkVC"}];

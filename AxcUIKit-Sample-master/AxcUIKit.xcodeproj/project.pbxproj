@@ -223,7 +223,13 @@
 		093C62361EA6F85800ADAC42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093C62341EA6F85800ADAC42 /* LaunchScreen.storyboard */; };
 		093C62411EA6F85800ADAC42 /* AxcUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C62401EA6F85800ADAC42 /* AxcUIKitTests.m */; };
 		093C624C1EA6F85800ADAC42 /* AxcUIKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C624B1EA6F85800ADAC42 /* AxcUIKitUITests.m */; };
+		1A25914599ADD285BFEDB94D /* UIViewCornerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F29C6976A50574B67CF45 /* UIViewCornerDemoViewController.m */; };
+		232D952A4C1E072A15B8EFB5 /* UIView+CKCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A3CE45C5974F6A923FF4C3 /* UIView+CKCorner.m */; };
+		2692A01607517F16EC8F0133 /* KMCornerShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B933CB61414512CF339D5 /* KMCornerShadowViewController.swift */; };
+		3BD8D75BA5DBF0548085013D /* YCShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 738E18B7485E9B5160DD4636 /* YCShadowView.m */; };
+		47DBDBBE3B665D5B045B2CD4 /* YCShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B448C5DE0F26AB7996FC6681 /* YCShadowViewController.m */; };
 		7455322C51F8226B34F5E7AB /* libPods-AxcUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A881E7F4C9D145A69BD3A0D /* libPods-AxcUIKit.a */; };
+		77BFE3A6299A7EA201D933A4 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AAB01653A0E73DB6141905 /* UIImageView+CornerRadius.m */; };
 		8821972C2930556100BA165B /* XTUserDefaultUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8821972A2930556100BA165B /* XTUserDefaultUtils.m */; };
 		884C22AB280E909400FD4D39 /* XWHUDManager_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 884C22A6280E909400FD4D39 /* XWHUDManager_right@2x.png */; };
 		884C22AC280E909400FD4D39 /* XWHUDManager_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 884C22A7280E909400FD4D39 /* XWHUDManager_info@2x.png */; };
@@ -245,6 +251,8 @@
 		8895EC2028B32C7F0068B53C /* ChartsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EC1F28B32C7F0068B53C /* ChartsTest.swift */; };
 		A1C7E4A51F09DE3800E0FAAA /* AxcUI_TextHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */; };
 		A1C7E4B51F09DE3800E0FAAA /* AxcTextHUDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */; };
+		B887B6233DC616216236B060 /* UIView+KMCornerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A0F8E26C348C3C411F177 /* UIView+KMCornerShadow.swift */; };
+		BB5A91A1E88DB09F7E10A0F3 /* ZYCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F435CBF9EB764E2C6CE01D /* ZYCornerRadiusViewController.m */; };
 		EA439CB71EE29E3100D992E7 /* AxcCellRearrangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */; };
 		EA439CC41EE2DE8400D992E7 /* TestTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CC31EE2DE8400D992E7 /* TestTwoVC.m */; };
 		EA439CD11EE2FAB500D992E7 /* AxcViewSharkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA439CCF1EE2FAB500D992E7 /* AxcViewSharkVC.m */; };
@@ -884,6 +892,7 @@
 		04FFFE7A213AE4AD000E363B /* WaterMarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterMarkViewController.m; sourceTree = "<group>"; };
 		04FFFE7C213AE80B000E363B /* UIImage+CA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CA.m"; sourceTree = "<group>"; };
 		04FFFE7D213AE80B000E363B /* UIImage+CA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CA.h"; sourceTree = "<group>"; };
+		0745A07E54094FAB2D32B62B /* UIView+CKCorner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+CKCorner.h"; sourceTree = "<group>"; };
 		091772971F20D6290065426B /* AxcPlayerVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcPlayerVideoVC.h; sourceTree = "<group>"; };
 		091772981F20D6290065426B /* AxcPlayerVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcPlayerVideoVC.m; sourceTree = "<group>"; };
 		0917729A1F20EB920065426B /* AxcPlayerVideoTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcPlayerVideoTwoVC.h; sourceTree = "<group>"; };
@@ -904,8 +913,15 @@
 		093C62471EA6F85800ADAC42 /* AxcUIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxcUIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		093C624B1EA6F85800ADAC42 /* AxcUIKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxcUIKitUITests.m; sourceTree = "<group>"; };
 		093C624D1EA6F85800ADAC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09A3CE45C5974F6A923FF4C3 /* UIView+CKCorner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+CKCorner.m"; sourceTree = "<group>"; };
+		0C3306AB19B5B60D5B508592 /* YCShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YCShadowView.h; sourceTree = "<group>"; };
 		3DC25E48BEF49F956671A841 /* Pods-AxcUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AxcUIKit/Pods-AxcUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		4A5EC4C816311F14AA9B2E7F /* UIViewCornerDemoViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UIViewCornerDemoViewController.h; sourceTree = "<group>"; };
+		4C2D760F7FCA65F9C4D336DB /* YCShadowViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YCShadowViewController.h; sourceTree = "<group>"; };
+		5D3F29C6976A50574B67CF45 /* UIViewCornerDemoViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UIViewCornerDemoViewController.m; sourceTree = "<group>"; };
+		6025E63AA0ACB56131C97E6A /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
 		6A881E7F4C9D145A69BD3A0D /* libPods-AxcUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AxcUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		738E18B7485E9B5160DD4636 /* YCShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YCShadowView.m; sourceTree = "<group>"; };
 		8821972A2930556100BA165B /* XTUserDefaultUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTUserDefaultUtils.m; sourceTree = "<group>"; };
 		8821972B2930556100BA165B /* XTUserDefaultUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTUserDefaultUtils.h; sourceTree = "<group>"; };
 		884C22A6280E909400FD4D39 /* XWHUDManager_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XWHUDManager_right@2x.png"; sourceTree = "<group>"; };
@@ -931,11 +947,17 @@
 		884C22CC280E935500FD4D39 /* XWHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWHUDManager.m; sourceTree = "<group>"; };
 		8895EC1E28B32C7F0068B53C /* AxcUIKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AxcUIKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		8895EC1F28B32C7F0068B53C /* ChartsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTest.swift; sourceTree = "<group>"; };
+		9D2A0F8E26C348C3C411F177 /* UIView+KMCornerShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+KMCornerShadow.swift"; sourceTree = "<group>"; };
 		A1C7E4A31F09DE3800E0FAAA /* AxcUI_TextHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcUI_TextHUD.h; sourceTree = "<group>"; };
 		A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcUI_TextHUD.m; sourceTree = "<group>"; };
 		A1C7E4B31F09DE3800E0FAAA /* AxcTextHUDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcTextHUDVC.h; sourceTree = "<group>"; };
 		A1C7E4B41F09DE3800E0FAAA /* AxcTextHUDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcTextHUDVC.m; sourceTree = "<group>"; };
+		A4F435CBF9EB764E2C6CE01D /* ZYCornerRadiusViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZYCornerRadiusViewController.m; sourceTree = "<group>"; };
+		A9AAB01653A0E73DB6141905 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		B448C5DE0F26AB7996FC6681 /* YCShadowViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YCShadowViewController.m; sourceTree = "<group>"; };
+		B94ECFBCE010D24A6F1F2DBF /* ZYCornerRadiusViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZYCornerRadiusViewController.h; sourceTree = "<group>"; };
 		BFA6BDAAF40C739C4824B43A /* Pods-AxcUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcUIKit/Pods-AxcUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		C79B933CB61414512CF339D5 /* KMCornerShadowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KMCornerShadowViewController.swift; sourceTree = "<group>"; };
 		EA439CB51EE29E3100D992E7 /* AxcCellRearrangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCellRearrangeVC.h; sourceTree = "<group>"; };
 		EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCellRearrangeVC.m; sourceTree = "<group>"; };
 		EA439CB81EE29E6B00D992E7 /* AxcUIKit_PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcUIKit_PCH.pch; sourceTree = "<group>"; };
@@ -2396,6 +2418,16 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		57195DE752707178ABFEC0CD /* CornerRadiusCategory */ = {
+			isa = PBXGroup;
+			children = (
+				6025E63AA0ACB56131C97E6A /* UIImageView+CornerRadius.h */,
+				A9AAB01653A0E73DB6141905 /* UIImageView+CornerRadius.m */,
+			);
+			name = CornerRadiusCategory;
+			path = CornerRadiusCategory;
+			sourceTree = "<group>";
+		};
 		70A538B44E171AD569066DA8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2464,6 +2496,25 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		8DDE14497C3460DCE6FDDCD9 /* CKViewCorner */ = {
+			isa = PBXGroup;
+			children = (
+				0745A07E54094FAB2D32B62B /* UIView+CKCorner.h */,
+				09A3CE45C5974F6A923FF4C3 /* UIView+CKCorner.m */,
+			);
+			name = CKViewCorner;
+			path = CKViewCorner;
+			sourceTree = "<group>";
+		};
+		9892BBC7544A34E42B751EE6 /* KMCornerShadow */ = {
+			isa = PBXGroup;
+			children = (
+				9D2A0F8E26C348C3C411F177 /* UIView+KMCornerShadow.swift */,
+			);
+			name = KMCornerShadow;
+			path = KMCornerShadow;
+			sourceTree = "<group>";
+		};
 		9EB2161CB3E0EDAB6A5A95AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2484,6 +2535,16 @@
 				A1C7E4A41F09DE3800E0FAAA /* AxcUI_TextHUD.m */,
 			);
 			path = AxcUI_TextHUD;
+			sourceTree = "<group>";
+		};
+		C8A5F925CD974264D1538CC1 /* YCShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				0C3306AB19B5B60D5B508592 /* YCShadowView.h */,
+				738E18B7485E9B5160DD4636 /* YCShadowView.m */,
+			);
+			name = YCShadowView;
+			path = YCShadowView;
 			sourceTree = "<group>";
 		};
 		EA439CB41EE29E0100D992E7 /* SampleVC */ = {
@@ -2619,6 +2680,13 @@
 				04C3710121662AAF0083A7FE /* CaptchainputViewController.m */,
 				884C22C1280E90E100FD4D39 /* XWViewController.h */,
 				884C22C0280E90E100FD4D39 /* XWViewController.m */,
+				4C2D760F7FCA65F9C4D336DB /* YCShadowViewController.h */,
+				B448C5DE0F26AB7996FC6681 /* YCShadowViewController.m */,
+				B94ECFBCE010D24A6F1F2DBF /* ZYCornerRadiusViewController.h */,
+				A4F435CBF9EB764E2C6CE01D /* ZYCornerRadiusViewController.m */,
+				C79B933CB61414512CF339D5 /* KMCornerShadowViewController.swift */,
+				4A5EC4C816311F14AA9B2E7F /* UIViewCornerDemoViewController.h */,
+				5D3F29C6976A50574B67CF45 /* UIViewCornerDemoViewController.m */,
 			);
 			name = Controls;
 			sourceTree = "<group>";
@@ -3191,6 +3259,10 @@
 				048C0F15211AF69700E2F22F /* SetFontSize */,
 				048C0F02211AEAEF00E2F22F /* CRPickerView */,
 				EAAFBFCC1F0E3E9D00881A62 /* PYSearch */,
+				9892BBC7544A34E42B751EE6 /* KMCornerShadow */,
+				C8A5F925CD974264D1538CC1 /* YCShadowView */,
+				57195DE752707178ABFEC0CD /* CornerRadiusCategory */,
+				8DDE14497C3460DCE6FDDCD9 /* CKViewCorner */,
 			);
 			path = OtherLib;
 			sourceTree = "<group>";
@@ -4106,6 +4178,14 @@
 				042AB9C921508D7A00275F99 /* SlideVerifyViewController.m in Sources */,
 				0440DDF521393E6200C59A45 /* UIView+Extension.m in Sources */,
 				EA5D4F141F1B0BD10002E9E9 /* UIView+BadgeView.m in Sources */,
+				B887B6233DC616216236B060 /* UIView+KMCornerShadow.swift in Sources */,
+				3BD8D75BA5DBF0548085013D /* YCShadowView.m in Sources */,
+				77BFE3A6299A7EA201D933A4 /* UIImageView+CornerRadius.m in Sources */,
+				47DBDBBE3B665D5B045B2CD4 /* YCShadowViewController.m in Sources */,
+				BB5A91A1E88DB09F7E10A0F3 /* ZYCornerRadiusViewController.m in Sources */,
+				2692A01607517F16EC8F0133 /* KMCornerShadowViewController.swift in Sources */,
+				232D952A4C1E072A15B8EFB5 /* UIView+CKCorner.m in Sources */,
+				1A25914599ADD285BFEDB94D /* UIViewCornerDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
