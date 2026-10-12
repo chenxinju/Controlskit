@@ -226,6 +226,7 @@
 		1A25914599ADD285BFEDB94D /* UIViewCornerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3F29C6976A50574B67CF45 /* UIViewCornerDemoViewController.m */; };
 		232D952A4C1E072A15B8EFB5 /* UIView+CKCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A3CE45C5974F6A923FF4C3 /* UIView+CKCorner.m */; };
 		2692A01607517F16EC8F0133 /* KMCornerShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B933CB61414512CF339D5 /* KMCornerShadowViewController.swift */; };
+		2B245B368D4138F318AB1712 /* UIView+CKCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08B4CA8D8C954EB012FFC9 /* UIView+CKCorner.swift */; };
 		3BD8D75BA5DBF0548085013D /* YCShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 738E18B7485E9B5160DD4636 /* YCShadowView.m */; };
 		47DBDBBE3B665D5B045B2CD4 /* YCShadowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B448C5DE0F26AB7996FC6681 /* YCShadowViewController.m */; };
 		7455322C51F8226B34F5E7AB /* libPods-AxcUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A881E7F4C9D145A69BD3A0D /* libPods-AxcUIKit.a */; };
@@ -958,6 +959,7 @@
 		B94ECFBCE010D24A6F1F2DBF /* ZYCornerRadiusViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZYCornerRadiusViewController.h; sourceTree = "<group>"; };
 		BFA6BDAAF40C739C4824B43A /* Pods-AxcUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxcUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AxcUIKit/Pods-AxcUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C79B933CB61414512CF339D5 /* KMCornerShadowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KMCornerShadowViewController.swift; sourceTree = "<group>"; };
+		DC08B4CA8D8C954EB012FFC9 /* UIView+CKCorner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+CKCorner.swift"; sourceTree = "<group>"; };
 		EA439CB51EE29E3100D992E7 /* AxcCellRearrangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCellRearrangeVC.h; sourceTree = "<group>"; };
 		EA439CB61EE29E3100D992E7 /* AxcCellRearrangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCellRearrangeVC.m; sourceTree = "<group>"; };
 		EA439CB81EE29E6B00D992E7 /* AxcUIKit_PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxcUIKit_PCH.pch; sourceTree = "<group>"; };
@@ -2501,6 +2503,7 @@
 			children = (
 				0745A07E54094FAB2D32B62B /* UIView+CKCorner.h */,
 				09A3CE45C5974F6A923FF4C3 /* UIView+CKCorner.m */,
+				DC08B4CA8D8C954EB012FFC9 /* UIView+CKCorner.swift */,
 			);
 			name = CKViewCorner;
 			path = CKViewCorner;
@@ -4186,6 +4189,7 @@
 				2692A01607517F16EC8F0133 /* KMCornerShadowViewController.swift in Sources */,
 				232D952A4C1E072A15B8EFB5 /* UIView+CKCorner.m in Sources */,
 				1A25914599ADD285BFEDB94D /* UIViewCornerDemoViewController.m in Sources */,
+				2B245B368D4138F318AB1712 /* UIView+CKCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 
 #import "UIViewCornerDemoViewController.h"
 #import "UIView+CKCorner.h"
+#import "AxcUIKit-Swift.h"
 
 @interface UIViewCornerDemoViewController ()
 @end
@@ -84,8 +85,31 @@
 
     y += 70 + 28 + 16;
 
+    y = [self addSectionTitle:@"Swift API（同等能力，UIView+CKCorner.swift）"
+                       detail:@"OC：ck_setCornerRadius: / ck_setLayerCornerRadius:\nSwift：ck_applyCornerRadius / ck_applyLayerCornerRadius\n（命名错开，避免与桥接进来的 OC 方法重名）"
+                        atY:y width:w inScroll:scroll];
+
+    UIView *swiftBox = [[UIView alloc] initWithFrame:CGRectMake(24, y, 120, 70)];
+    swiftBox.backgroundColor = [UIColor colorWithRed:0.15 green:0.65 blue:0.85 alpha:1];
+    [scroll addSubview:swiftBox];
+    // Swift extension，@objc 暴露给 OC
+    [swiftBox ck_applyCornerRadius:18 corners:UIRectCornerTopLeft | UIRectCornerTopRight];
+    [self addCaption:@"Swift shape" under:swiftBox inScroll:scroll];
+
+    UILabel *swiftLab = [[UILabel alloc] initWithFrame:CGRectMake(160, y, 120, 70)];
+    swiftLab.backgroundColor = [UIColor colorWithRed:0.35 green:0.55 blue:0.2 alpha:1];
+    swiftLab.text = @"Swift layer";
+    swiftLab.textAlignment = NSTextAlignmentCenter;
+    swiftLab.textColor = [UIColor whiteColor];
+    swiftLab.font = [UIFont systemFontOfSize:13];
+    [scroll addSubview:swiftLab];
+    [swiftLab ck_applyLayerCornerRadius:18];
+    [self addCaption:@"Swift layer" under:swiftLab inScroll:scroll];
+
+    y += 70 + 28 + 16;
+
     y = [self addSectionTitle:@"和本项目已有能力的关系"
-                       detail:@"• 扩展类 →「快速切圆角」= UIView+AxcRectCorner（CAShapeLayer）\n• 本组「ZYCornerRadius」= 仅 UIImageView 预裁图\n• 本组本页 = UIView 通用方案对照演示"
+                       detail:@"• 扩展类 →「快速切圆角」= UIView+AxcRectCorner（CAShapeLayer）\n• 本组「ZYCornerRadius」= 仅 UIImageView 预裁图\n• 本组本页 = UIView 通用方案对照演示（OC + Swift）"
                         atY:y width:w inScroll:scroll];
 
     scroll.contentSize = CGSizeMake(w, y + 40);
